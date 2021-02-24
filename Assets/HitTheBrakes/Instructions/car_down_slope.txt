@@ -1,0 +1,20 @@
+There are eight possible variables:
+
+Final Velocity - FV (what we want to calculate)
+Initial Velocity - IV (0 since the car begins at rest every time)
+Gravity -g (9.81 every time)
+mu (ranges from 0.2 to 0.8)
+Distance - d (ranges from 20 m to 100 m)!pau
+Theta (the angles, ranges from 30 degrees to 45 degrees)
+Time - t (calculated from info given)
+Acceleration - a (calculated from info given)
+
+a = g * (sin(theta) - mu * cos(theta))
+time = sqrt((2 * d) / a)
+
+We want to find for the final velocity, and there are two ways we can do that:
+
+1. FV = IV + at
+2. FV = sqrt(IV^2 + 2 * a * d)
+
+If the car releases its brakes from rest on the slope, what will be the final velocity of the car?
