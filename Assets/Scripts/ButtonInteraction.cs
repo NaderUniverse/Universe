@@ -8,29 +8,39 @@ public class ButtonInteraction : MonoBehaviour
     public GameObject playMenuText;
     public GameObject wantToPlayMenu;
     public GameObject gameIndex;
-    // Start is called before the first frame update
-    
+
     void OnTriggerStay2D(Collider2D info)
     {
         Debug.Log("DEES\n");
-        if(info.gameObject.tag == "HitTheBrakesInteraction")
+        if (info.gameObject.CompareTag("HitTheBrakesInteraction"))
         {
             gameIndex.GetComponent<NextScene>().index = 1;
             Debug.Log("DEEZ\n");
             text.SetActive(true);
 
-            if(Input.GetButton("Interact"))
+            if (Input.GetButton("Interact"))
             {
                 wantToPlayMenu.SetActive(true);
             }
         }
 
-        else if(info.gameObject.tag == "PlanetInteraction")
+        else if (info.gameObject.CompareTag("PlanetInteraction"))
         {
             gameIndex.GetComponent<NextScene>().index = 7;
             text.SetActive(true);
 
-            if(Input.GetButton("Interact"))
+            if (Input.GetButton("Interact"))
+            {
+                wantToPlayMenu.SetActive(true);
+            }
+        }
+
+        else if (info.gameObject.CompareTag("TetherballInteraction"))
+        {
+            gameIndex.GetComponent<NextScene>().index = 9;
+            text.SetActive(true);
+
+            if (Input.GetButton("Interact"))
             {
                 wantToPlayMenu.SetActive(true);
             }

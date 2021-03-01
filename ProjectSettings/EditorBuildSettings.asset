@@ -15,18 +15,24 @@ EditorBuildSettings:
     path: Assets/HitTheBrakes/Scenes/LevelSelection.unity
     guid: 7d34521a052c7d4499c983877da73be7
   - enabled: 1
-    path: Assets/HitTheBrakes/Scenes/Game.unity
+    path: Assets/HitTheBrakes/Scenes/Level ForceToStop.unity
     guid: 15e1ad4eae4265946bafe854936977c5
   - enabled: 1
-    path: Assets/HitTheBrakes/Scenes/Level2.unity
+    path: Assets/HitTheBrakes/Scenes/Level Friction.unity
     guid: c840bda8db42bf14b84fb85ab51f058d
   - enabled: 1
-    path: Assets/HitTheBrakes/Scenes/Level3.unity
+    path: Assets/HitTheBrakes/Scenes/Level Crash.unity
     guid: b1eb8e67e0b51714da0cc291ad0b34dd
   - enabled: 1
-    path: Assets/HitTheBrakes/Scenes/Level4-BUS.unity
+    path: Assets/HitTheBrakes/Scenes/Level Race.unity
     guid: 9a34f4da2fc853749bf229023c36e6e3
   - enabled: 1
     path: Assets/NatPabloGames/Planets/Assets/Scenes/PlanetMenu.unity
     guid: 1097c3b62c31147d2b935c4814e39b34
+  - enabled: 1
+    path: Assets/NatPabloGames/Planets/Assets/Scenes/GameScene.unity
+    guid: 4034d1135d096d640b787d424022650d
+  - enabled: 1
+    path: Assets/NatPabloGames/Tetherball/Assets/Scenes/MainMenu.unity
+    guid: 5c5835f5f81e54ab291330e7a7de171e
   m_configObjects: {}

@@ -13,6 +13,7 @@ TagManager:
   - car
   - explosion
   - PlanetInteraction
+  - TetherballInteraction
   layers:
   - Default
   - TransparentFX
