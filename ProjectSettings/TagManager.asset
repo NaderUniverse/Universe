@@ -12,6 +12,7 @@ TagManager:
   - Bus
   - car
   - explosion
+  - PlanetInteraction
   layers:
   - Default
   - TransparentFX

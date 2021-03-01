@@ -633,10 +633,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: eea20e17-a279-4ae4-9824-c374a2db74f1
+  cloudProjectId: b9516150-9d04-4efd-949c-848034566add
   framebufferDepthMemorylessMode: 0
-  projectName: Universe2
-  organizationId: jixster
+  projectName: Universe2 (1)
+  organizationId: samuelmm97
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
