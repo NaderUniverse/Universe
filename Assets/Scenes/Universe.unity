@@ -436,7 +436,7 @@ MonoBehaviour:
   text: {fileID: 1789276922}
   playMenuText: {fileID: 0}
   wantToPlayMenu: {fileID: 878206731}
-  gameIndex: {fileID: 1264577912}
+  nextScene: {fileID: 1264577912}
 --- !u!1 &229881828
 GameObject:
   m_ObjectHideFlags: 0

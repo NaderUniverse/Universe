@@ -7,14 +7,14 @@ public class ButtonInteraction : MonoBehaviour
     public GameObject text;
     public GameObject playMenuText;
     public GameObject wantToPlayMenu;
-    public GameObject gameIndex;
+    public GameObject nextScene;
 
     void OnTriggerStay2D(Collider2D info)
     {
         Debug.Log("DEES\n");
         if (info.gameObject.CompareTag("HitTheBrakesInteraction"))
         {
-            gameIndex.GetComponent<NextScene>().index = 1;
+            nextScene.GetComponent<NextScene>().index = 1;
             Debug.Log("DEEZ\n");
             text.SetActive(true);
 
@@ -26,7 +26,7 @@ public class ButtonInteraction : MonoBehaviour
 
         else if (info.gameObject.CompareTag("PlanetInteraction"))
         {
-            gameIndex.GetComponent<NextScene>().index = 7;
+            nextScene.GetComponent<NextScene>().index = 7;
             text.SetActive(true);
 
             if (Input.GetButton("Interact"))
@@ -37,7 +37,7 @@ public class ButtonInteraction : MonoBehaviour
 
         else if (info.gameObject.CompareTag("TetherballInteraction"))
         {
-            gameIndex.GetComponent<NextScene>().index = 9;
+            nextScene.GetComponent<NextScene>().index = 9;
             text.SetActive(true);
 
             if (Input.GetButton("Interact"))
