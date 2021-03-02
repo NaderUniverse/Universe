@@ -45,6 +45,16 @@ public class ButtonInteraction : MonoBehaviour
                 wantToPlayMenu.SetActive(true);
             }
         }
+        else if (info.gameObject.CompareTag("GearComboInteraction"))
+        {
+            nextScene.GetComponent<NextScene>().index = 16;
+            text.SetActive(true);
+
+            if (Input.GetButton("Interact"))
+            {
+                wantToPlayMenu.SetActive(true);
+            }
+        }
     }
 
     void OnTriggerExit2D(Collider2D info)
