@@ -1,0 +1,11 @@
+Universe
+	HitTheBrakes prompt(onTrigger)
+		HitTheBrakes Menu
+		Play:
+			HTBMenu(Inactive)
+			LevelSelector(Active)
+
+Refactor Names of Objects
+match dimensions of child to parent for scaling
+crash level escape key
+BrakeMalfunction settings menu layer

@@ -105,7 +105,7 @@ public class Movement2D : MonoBehaviour
         }
         else
         {
-            //Debug.Log("Deaccelerating");
+            //Debug.Log("Decelerating");
         }
 
         if (x <= 0)

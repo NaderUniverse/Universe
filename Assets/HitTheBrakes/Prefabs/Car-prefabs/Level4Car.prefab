@@ -1131,9 +1131,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbe95f96c5ec2e44bc48d26aaa716e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carAccel: 0
+  carVelocity: 0
   accelScale: 0.05
   rotationScale: 1000
+  carOffset: 57.1256
   posX: 0
   posY: 5
   carPush: 0
