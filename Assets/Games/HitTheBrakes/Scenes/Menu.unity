@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 33174943}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 317284535}
 --- !u!114 &33174946
 MonoBehaviour:
@@ -2974,7 +2974,6 @@ GameObject:
   - component: {fileID: 223355661}
   - component: {fileID: 223355660}
   - component: {fileID: 223355659}
-  - component: {fileID: 223355658}
   - component: {fileID: 223355657}
   - component: {fileID: 223355656}
   - component: {fileID: 223355655}
@@ -3174,18 +3173,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &223355658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223355652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a05ef4a928a79bd4685ef13723a89134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &223355659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4510,7 +4497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 266302451}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 812516916}
 --- !u!114 &266302454
 MonoBehaviour:
@@ -4961,7 +4948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 33174943}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 317284535}
 --- !u!114 &317284537
 MonoBehaviour:
@@ -5371,7 +5358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 328976212}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 569722119}
 --- !u!114 &328976215
 MonoBehaviour:
@@ -8917,7 +8904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 328976212}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 569722119}
 --- !u!114 &569722121
 MonoBehaviour:
@@ -10022,7 +10009,6 @@ GameObject:
   - component: {fileID: 599883262}
   - component: {fileID: 599883261}
   - component: {fileID: 599883260}
-  - component: {fileID: 599883263}
   - component: {fileID: 599883267}
   - component: {fileID: 599883266}
   - component: {fileID: 599883265}
@@ -10156,18 +10142,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599883258}
   m_CullTransparentMesh: 0
---- !u!114 &599883263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599883258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a05ef4a928a79bd4685ef13723a89134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &599883264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13786,7 +13760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 811587419}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 1431318827}
 --- !u!1 &812516916
 GameObject:
@@ -13823,7 +13797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 266302451}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 812516916}
 --- !u!114 &812516918
 MonoBehaviour:
@@ -18630,7 +18604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 1769015785}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 1179790360}
 --- !u!114 &1179790363
 MonoBehaviour:
@@ -22989,7 +22963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 811587419}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 1431318827}
 --- !u!1001 &1443978553
 PrefabInstance:
@@ -27653,7 +27627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 1769015785}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 1179790360}
 --- !u!114 &1769015787
 MonoBehaviour:
@@ -29353,7 +29327,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1818153042}
+        - m_Target: {fileID: 0}
           m_MethodName: HoverSound
           m_Mode: 1
           m_Arguments:
@@ -29368,7 +29342,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1818153042}
+        - m_Target: {fileID: 0}
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -29485,7 +29459,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1818153038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db6981c9fe6357449357da51e48b7c5, type: 3}
+  m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 1818153041}
