@@ -7,7 +7,7 @@ using TMPro;
 public class ScoreAnimation : MonoBehaviour
 {
    public TMP_Text score;
-   public IEnumerator correctAnimation()
+   public IEnumerator CorrectAnimation()
     {
         for (int i = 0; i < 41; i++)
         {
@@ -25,7 +25,7 @@ public class ScoreAnimation : MonoBehaviour
         }
     }
 
-    public IEnumerator wrongAnimation()
+    public IEnumerator WrongAnimation()
     {
         for (int i = 0; i < 25; i++)
         {

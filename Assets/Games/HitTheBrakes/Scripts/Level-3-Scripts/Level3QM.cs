@@ -156,7 +156,7 @@ public class Level3QM : MonoBehaviour
         rightSound.SetActive(true);
 
         // start score animation
-        StartCoroutine(FindObjectOfType<ScoreAnimation>().correctAnimation());
+        StartCoroutine(FindObjectOfType<ScoreAnimation>().CorrectAnimation());
     }
 
     public void StartWrongAnimations()
@@ -165,7 +165,7 @@ public class Level3QM : MonoBehaviour
         wrongSound.SetActive(true);
 
         // display red score color for wrong
-        StartCoroutine(FindObjectOfType<ScoreAnimation>().wrongAnimation());
+        StartCoroutine(FindObjectOfType<ScoreAnimation>().WrongAnimation());
     }
 
    
