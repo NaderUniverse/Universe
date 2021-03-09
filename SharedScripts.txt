@@ -1,0 +1,5 @@
+Shared Scripts
+
+- playAudio(button sounds)
+- standardize available volume mixers
+the variable settingsMenu options manager has not been assigned

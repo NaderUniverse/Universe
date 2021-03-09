@@ -50,7 +50,7 @@ public class QuestionManager : MonoBehaviour
         // if enter button is pressed enter question
         if (Input.GetButtonDown("Submit"))
         {
-            EnterQuestion();
+            CheckAnswer();
         }
     }
 
@@ -208,7 +208,7 @@ public class QuestionManager : MonoBehaviour
 
 
     // when user enters the answer call this
-    public void EnterQuestion()
+    public void CheckAnswer()
     {
         // reset our objects state so the animation can repeat itself
         StopAnimations();

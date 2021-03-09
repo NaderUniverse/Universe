@@ -923,7 +923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 401492278}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 1766266924}
 --- !u!114 &401492281
 MonoBehaviour:
@@ -1015,7 +1015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d9c7d054b906643a55f65a32b7ba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicMixer: {fileID: 24100000, guid: dc145abdbf4692345bc5028ff0048747, type: 2}
+  musicVolume: {fileID: 0}
+  gameVolume: {fileID: 0}
 --- !u!114 &412953032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2262,7 +2263,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6474004194595587645, guid: 71e53e2afb4b7794c81f8753786f81a8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 71e53e2afb4b7794c81f8753786f81a8, type: 3}
 --- !u!4 &681914323 stripped
 Transform:
@@ -2480,10 +2482,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 739858483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 311fca4bf64d1be40bd9e177e6f04a86, type: 3}
+  m_Script: {fileID: 11500000, guid: 04d9c7d054b906643a55f65a32b7ba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 1edfc26bdc7cee742b6ffff89832aae3, type: 2}
+  musicVolume: {fileID: 24100000, guid: dc145abdbf4692345bc5028ff0048747, type: 2}
+  gameVolume: {fileID: 24100000, guid: 1edfc26bdc7cee742b6ffff89832aae3, type: 2}
 --- !u!114 &739858486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,7 +2538,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 739858485}
-        m_MethodName: setVolume
+        m_MethodName: SetGameVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5711,7 +5714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 401492278}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 1766266924}
 --- !u!114 &1766266927
 MonoBehaviour:
