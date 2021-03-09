@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonHover : MonoBehaviour
+public class ButtonSounds : MonoBehaviour
 {
     public AudioSource sound;
     public AudioClip hover;

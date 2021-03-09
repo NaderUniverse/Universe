@@ -1178,7 +1178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d9c7d054b906643a55f65a32b7ba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicMixer: {fileID: 24100000, guid: dc145abdbf4692345bc5028ff0048747, type: 2}
+  musicVolume: {fileID: 0}
+  gameVolume: {fileID: 0}
 --- !u!114 &127966607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1750,7 +1751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 576475842}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 341118336}
 --- !u!114 &341118339
 MonoBehaviour:
@@ -3208,7 +3209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 576475842}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 341118336}
 --- !u!114 &576475845
 MonoBehaviour:
@@ -6457,10 +6458,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1872163857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 311fca4bf64d1be40bd9e177e6f04a86, type: 3}
+  m_Script: {fileID: 11500000, guid: 04d9c7d054b906643a55f65a32b7ba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 1edfc26bdc7cee742b6ffff89832aae3, type: 2}
+  musicVolume: {fileID: 24100000, guid: dc145abdbf4692345bc5028ff0048747, type: 2}
+  gameVolume: {fileID: 24100000, guid: 1edfc26bdc7cee742b6ffff89832aae3, type: 2}
 --- !u!114 &1872163860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6512,7 +6514,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1872163859}
-        m_MethodName: setVolume
+        m_MethodName: SetGameVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
