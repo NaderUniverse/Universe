@@ -40,7 +40,7 @@ public class QuestionManager : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         questions = new string[2];
     }

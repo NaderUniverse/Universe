@@ -9,22 +9,22 @@ public class OptionsManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Esc"))
-        {
-            // sets options menu to active and sets game objects back to active when closing the options menu
-            if(settingsMenu.activeSelf)
+            if (Input.GetButtonDown("Esc"))
             {
-                settingsMenu.SetActive(false);
-                settingsButton.SetActive(true);
+                // sets options menu to active and sets game objects back to active when closing the options menu
+                if (settingsMenu.activeSelf)
+                {
+                    settingsMenu.SetActive(false);
+                    settingsButton.SetActive(true);
+                }
+
+                // sets options menu to inactive and sets game objects to inactive when opening the options menu
+                else
+                {
+                    settingsMenu.SetActive(true);
+                    settingsButton.SetActive(false);
+                }
             }
-            
-            // sets options menu to inactive and sets game objects to inactive when opening the options menu
-            else
-            {
-                settingsMenu.SetActive(true);
-                settingsButton.SetActive(false);
-            }
-        }
-        
+          
     }
 }

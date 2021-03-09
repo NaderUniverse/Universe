@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 177165661}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 562302939}
 --- !u!1 &191171774
 GameObject:
@@ -1035,9 +1035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 241653962}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!114 &241653966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1256,7 +1253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d9c7d054b906643a55f65a32b7ba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicMixer: {fileID: 24100000, guid: dc145abdbf4692345bc5028ff0048747, type: 2}
+  musicVolume: {fileID: 0}
+  gameVolume: {fileID: 0}
 --- !u!114 &310317994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1419,7 +1417,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 0b9ad9a68c8ec0e419bd9fba1b984e02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2250,9 +2248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 562302943}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!82 &562302943
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2475,7 +2470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 177165661}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 562302939}
 --- !u!1 &573808488
 GameObject:
@@ -3338,9 +3333,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 860581615}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!114 &860581619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3443,6 +3435,7 @@ GameObject:
   - component: {fileID: 878127315}
   - component: {fileID: 878127314}
   - component: {fileID: 878127313}
+  - component: {fileID: 878127316}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3515,6 +3508,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &878127316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878127312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57096899a75968c4b830cb167c7c779b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 317574706}
+  offset: {x: 0, y: 0, z: -10}
 --- !u!1 &909084260
 GameObject:
   m_ObjectHideFlags: 0
@@ -4184,9 +4191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 992384161}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!114 &992384165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4859,9 +4863,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 1308378706}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!114 &1308378710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5189,7 +5190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   car: {fileID: 317574706}
-  offset: {x: 0, y: 0, z: 10}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!212 &1360609876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5556,9 +5557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 1478358334}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!82 &1478358334
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6884,7 +6882,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: c16b156e1a60dda4fa2420765e92f752, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

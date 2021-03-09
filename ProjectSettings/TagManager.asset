@@ -15,6 +15,9 @@ TagManager:
   - PlanetInteraction
   - TetherballInteraction
   - GearComboInteraction
+  - endpoint
+  - RNG
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

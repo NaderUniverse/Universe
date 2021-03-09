@@ -22,7 +22,7 @@ public class CarMechanics : MonoBehaviour
         Debug.Log(spawnPoint.position);
         car.position = spawnPoint.position;
         transform.rotation = slope.rotation;
-        velocityText.rectTransform.rotation = transform.rotation;
+        //velocityText.rectTransform.rotation = transform.rotation;
     }
 
     void FixedUpdate()
@@ -32,7 +32,7 @@ public class CarMechanics : MonoBehaviour
         float velocity = Mathf.Sqrt(x * x + y * y);
         //float accelaration = (velocity - lateVelocity) / Time.fixedDeltaTime;
         //lateVelocity = velocity;
-        velocityText.text = "" + Math.Round(velocity, 2) + " m/s";
+        //velocityText.text = "" + Math.Round(velocity, 2) + " m/s";
 
         //rotate left and right wheel
         leftWheel.Rotate(0, 0, -0.8f * velocity);
