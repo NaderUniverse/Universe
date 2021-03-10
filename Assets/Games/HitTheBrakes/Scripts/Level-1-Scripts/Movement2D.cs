@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movement2D : MonoBehaviour
 {
     public Rigidbody rb;
+    public Transform spawnPoint;
     public float moveSpeed = 5f;
     public bool isGrounded = false;
     public bool isRightPressed = false;
@@ -32,7 +33,8 @@ public class Movement2D : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        transform.position = new Vector3(-10.19f, -0.49f, -0.01f);
+        Debug.Log(GameObject.FindWithTag("SpawnPoint").transform.position.x);
+        transform.position = GameObject.FindWithTag("SpawnPoint").transform.position;
         randoDist = Random.Range(20, 100);
         randoAcc = Random.Range(3, 15);
         randoV = Random.Range(25, 35);

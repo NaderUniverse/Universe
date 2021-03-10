@@ -6,15 +6,25 @@ public class followCar : MonoBehaviour
 {
     public Transform car;
     public Vector3 offset;
-    // Start is called before the first frame update
+    public GameObject scene;
+    public Vector3 defaultPosition;
+
     void Start()
     {
-        
+        // set default position of camera so we know where to put it back when we aren't using it
+        defaultPosition = transform.position;
     }
-
     // Update is called once per frame
     void Update()
     {
-        transform.position = car.position + offset;
+        if (scene.activeSelf)
+        {
+            transform.position = car.position + offset;
+        }
+        else
+        {
+            transform.position = defaultPosition;
+        }
+        
     }
 }

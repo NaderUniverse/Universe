@@ -16,6 +16,7 @@ public class QuestionManager : MonoBehaviour
     public TMP_Text answer;
     public TMP_InputField input;
     string[] questions;
+
     // random variables storing calculation values
     private int force;
     private int time;
@@ -23,12 +24,15 @@ public class QuestionManager : MonoBehaviour
     private int initialVelocity;
     private int finalVelocity;
     private double correctAnswer;
+
     // use for score at top right
     private int score = 0;
     private int total = 0;
+
     // firework object
     public GameObject fw;
     public GameObject typingAudio;
+
     // xConfetti animation for loss
     public GameObject xConfetti;
     public GameObject carPrefab;
@@ -36,7 +40,7 @@ public class QuestionManager : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         questions = new string[2];
     }
@@ -46,7 +50,7 @@ public class QuestionManager : MonoBehaviour
         // if enter button is pressed enter question
         if (Input.GetButtonDown("Submit"))
         {
-            EnterQuestion();
+            CheckAnswer();
         }
     }
 
@@ -58,12 +62,13 @@ public class QuestionManager : MonoBehaviour
         
         // spawn a new car
         Instantiate(carPrefab);
+
         // generate random values for calculation
         mass = Random.Range(1000, 2001);
         initialVelocity = Random.Range(50, 101);
 
         // convert from km/h to mph
-        float metersPerSecond = ((float)initialVelocity * 1000.0f) / 3600.0f;
+        float metersPerSecond = (float)initialVelocity * 1000.0f / 3600.0f;
 
         // pick a random question from 2 possible question types
         int randomQuestion = Random.Range(0, 2);
@@ -80,14 +85,14 @@ public class QuestionManager : MonoBehaviour
                        " km/h. Find the force in Newtons required to come to a complete stop.";
 
             // calculate the correct answer for comparison
-            correctAnswer = calculateAnswer(mass, metersPerSecond, time);
+            correctAnswer = CalculateAnswer(mass, metersPerSecond, time);
             // this will set the answer displayed after they enter.
             answer.text = "The answer was " + Math.Round(correctAnswer, 2) + " N";
 
             Debug.Log(q + " " + correctAnswer);
 
             // set the 1st possible question to the resulting string
-            questions[0] = q;
+            questions[randomQuestion] = q;
         }
 
         // time question
@@ -103,14 +108,14 @@ public class QuestionManager : MonoBehaviour
                        " km/h. Find the time in seconds needed to come to a complete stop.";
 
             // pass in force this time
-            correctAnswer = calculateAnswer(mass, metersPerSecond, force);
+            correctAnswer = CalculateAnswer(mass, metersPerSecond, force);
 
             // for display purposes
             answer.text = "The answer was " + Math.Round(correctAnswer, 2) + "s";
 
             Debug.Log(q + " " + correctAnswer);
 
-            questions[1] = q;
+            questions[randomQuestion] = q;
         }
 
         // For Testing, REMOVE BEFORE FINAL PRODUCT!!!
@@ -125,8 +130,10 @@ public class QuestionManager : MonoBehaviour
     {
         //start typing audio
         typingAudio.SetActive(true);
+
         // start from nothing
         questionText.text = "";
+
         // for each letter in question
         foreach (char letter in question.ToCharArray())
         {
@@ -136,35 +143,57 @@ public class QuestionManager : MonoBehaviour
             // wait 0.05 seconds between letters added
             yield return new WaitForSeconds(0.05f);
         }
+
         // stop typing audio
         typingAudio.SetActive(false);
+    }
+
+    public void StartAnimation()
+    {
+        if (isCorrectText.text == "Correct!")
+        {
+            // start firework
+            fw.SetActive(true);
+
+            // display green score color for correct
+            StartCoroutine(FindObjectOfType<ScoreAnimation>().CorrectAnimation());
+        }
+        else if (isCorrectText.text == "Wrong!")
+        {
+            // start confetti
+            xConfetti.SetActive(true);
+
+            // display red score color for wrong
+            StartCoroutine(FindObjectOfType<ScoreAnimation>().WrongAnimation());
+        }
     }
 
     public void StopAnimations()
     {
-        // stop coroutines so we can do score coroutine
-        StopAllCoroutines();
+        // stop confetti
+        xConfetti.SetActive(false);
 
         // stop firework
         fw.SetActive(false);
+        
+        // stop coroutines so we can do score coroutine
+        StopAllCoroutines();
+        
+        // stop typing audio
+        // typingAudio.SetActive(false);
 
         // destroy the old car before spawning a new one.
         FindObjectOfType<DestroyCar>().Remove();
-
-        // stop typing audio
-        typingAudio.SetActive(false);
-
-        // stop X confetti
-        xConfetti.SetActive(false);
     }
 
+    /*
     public void StartCorrectAnimations()
     {
         // start firework
         fw.SetActive(true);
 
         // start score animation
-        StartCoroutine(FindObjectOfType<ScoreAnimation>().correctAnimation());
+        StartCoroutine(FindObjectOfType<ScoreAnimation>().CorrectAnimation());
     }
 
     public void StartWrongAnimations()
@@ -173,11 +202,13 @@ public class QuestionManager : MonoBehaviour
         xConfetti.SetActive(true);
 
         // display red score color for wrong
-        StartCoroutine(FindObjectOfType<ScoreAnimation>().wrongAnimation());
+        StartCoroutine(FindObjectOfType<ScoreAnimation>().WrongAnimation());
     }
+    */
 
-    // when user enters the question call this
-    public void EnterQuestion()
+
+    // when user enters the answer call this
+    public void CheckAnswer()
     {
         // reset our objects state so the animation can repeat itself
         StopAnimations();
@@ -192,7 +223,8 @@ public class QuestionManager : MonoBehaviour
             isCorrectText.text = "Correct!";
 
             // play animations for correct answer
-            StartCorrectAnimations();         
+            //StartCorrectAnimations();         
+            StartAnimation();
         }
         else
         {
@@ -200,7 +232,7 @@ public class QuestionManager : MonoBehaviour
             isCorrectText.text = "Wrong!";
 
             // play animations for wrong answer
-            StartWrongAnimations();
+            StartAnimation();
         }
 
         // increate total questions answered
@@ -219,12 +251,10 @@ public class QuestionManager : MonoBehaviour
         answerMenu.SetActive(true);
     }
 
-    
-
-    // calaculate answer to problem
-    float calculateAnswer(int mass, float iVelocity, int time)
+    // calculate answer to problem
+    float CalculateAnswer(int mass, float iVelocity, int time)
     {
         // formula for time / force
-        return ((float)mass * (iVelocity / 2.0f)) / (float)time; 
+        return (float)mass * (iVelocity / 2.0f) / (float)time; 
     }
 }

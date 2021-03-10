@@ -319,10 +319,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 58611979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 311fca4bf64d1be40bd9e177e6f04a86, type: 3}
+  m_Script: {fileID: 11500000, guid: 04d9c7d054b906643a55f65a32b7ba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 1edfc26bdc7cee742b6ffff89832aae3, type: 2}
+  musicVolume: {fileID: 24100000, guid: dc145abdbf4692345bc5028ff0048747, type: 2}
+  gameVolume: {fileID: 24100000, guid: 1edfc26bdc7cee742b6ffff89832aae3, type: 2}
 --- !u!114 &58611982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,7 +375,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 58611981}
-        m_MethodName: setVolume
+        m_MethodName: SetGameVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -550,9 +551,9 @@ GameObject:
   - component: {fileID: 97104022}
   - component: {fileID: 97104025}
   - component: {fileID: 97104024}
-  - component: {fileID: 97104023}
-  - component: {fileID: 97104028}
   - component: {fileID: 97104027}
+  - component: {fileID: 97104028}
+  - component: {fileID: 97104023}
   - component: {fileID: 97104026}
   m_Layer: 5
   m_Name: NextButton
@@ -2355,7 +2356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d9c7d054b906643a55f65a32b7ba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicMixer: {fileID: 24100000, guid: dc145abdbf4692345bc5028ff0048747, type: 2}
+  musicVolume: {fileID: 0}
+  gameVolume: {fileID: 0}
 --- !u!114 &606183011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3097,7 +3099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 898404997}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 867186748}
 --- !u!1 &898404997
 GameObject:
@@ -3193,7 +3195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 898404997}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 867186748}
 --- !u!1 &902572772
 GameObject:
@@ -5691,7 +5693,6 @@ GameObject:
   - component: {fileID: 1838505026}
   - component: {fileID: 1838505025}
   - component: {fileID: 1838505024}
-  - component: {fileID: 1838505023}
   - component: {fileID: 1838505028}
   - component: {fileID: 1838505027}
   - component: {fileID: 1838505029}
@@ -5722,21 +5723,6 @@ RectTransform:
   m_AnchoredPosition: {x: 901, y: -111}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1838505023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838505021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f484f99da848a814b94c2ecf9f7c3d65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  question:
-    name: 
-    questions: []
 --- !u!114 &1838505024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5780,8 +5766,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963179377}
-        m_MethodName: EnterQuestion
+      - m_Target: {fileID: 1838505028}
+        m_MethodName: CheckAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5934,12 +5920,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1838505021}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db6981c9fe6357449357da51e48b7c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 37be7a1e3030068469a2ebe9c27b3ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 1838505027}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
+  questionText: {fileID: 0}
+  scoreText: {fileID: 0}
+  isCorrectText: {fileID: 0}
+  answer: {fileID: 0}
+  input: {fileID: 0}
+  fw: {fileID: 0}
+  typingAudio: {fileID: 0}
+  xConfetti: {fileID: 0}
+  carPrefab: {fileID: 0}
+  answerMenu: {fileID: 0}
 --- !u!114 &1838505029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5957,12 +5950,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1838505028}
-          m_MethodName: HoverSound
-          m_Mode: 1
+        - m_Target: {fileID: 1838505027}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -5972,12 +5966,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1838505028}
-          m_MethodName: ClickSound
-          m_Mode: 1
+        - m_Target: {fileID: 1838505027}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 

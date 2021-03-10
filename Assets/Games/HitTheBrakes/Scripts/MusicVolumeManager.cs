@@ -5,9 +5,16 @@ using UnityEngine.Audio;
 
 public class MusicVolumeManager : MonoBehaviour
 {
-   public AudioMixer musicMixer;
-   public void setMusicVolume(float musicVolume)
-   {
-        musicMixer.SetFloat("MusicVolume", Mathf.Log10(musicVolume) * 20);
-   }
+    public AudioMixer musicVolume;
+    public AudioMixer gameVolume;
+
+    public void SetMusicVolume(float volume)
+    {
+        musicVolume.SetFloat("MusicVolume", Mathf.Log10(volume) * 20);
+    }
+
+    public void SetGameVolume(float volume)
+    {
+        gameVolume.SetFloat("Volume", Mathf.Log10(volume) * 20);
+    }
 }

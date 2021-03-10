@@ -658,7 +658,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &177165662
 RectTransform:
   m_ObjectHideFlags: 0
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 177165661}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 562302939}
 --- !u!1 &191171774
 GameObject:
@@ -1035,9 +1035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 241653962}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!114 &241653966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1256,7 +1253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d9c7d054b906643a55f65a32b7ba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicMixer: {fileID: 24100000, guid: dc145abdbf4692345bc5028ff0048747, type: 2}
+  musicVolume: {fileID: 0}
+  gameVolume: {fileID: 0}
 --- !u!114 &310317994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1419,7 +1417,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 0b9ad9a68c8ec0e419bd9fba1b984e02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2250,9 +2248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 562302943}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!82 &562302943
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2475,7 +2470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e036d4b998b4d754993f7878c521afbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenu: {fileID: 177165661}
+  settingsMenu: {fileID: 0}
   settingsButton: {fileID: 562302939}
 --- !u!1 &573808488
 GameObject:
@@ -2898,10 +2893,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 695961263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 311fca4bf64d1be40bd9e177e6f04a86, type: 3}
+  m_Script: {fileID: 11500000, guid: 04d9c7d054b906643a55f65a32b7ba19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 1edfc26bdc7cee742b6ffff89832aae3, type: 2}
+  musicVolume: {fileID: 24100000, guid: dc145abdbf4692345bc5028ff0048747, type: 2}
+  gameVolume: {fileID: 24100000, guid: 1edfc26bdc7cee742b6ffff89832aae3, type: 2}
 --- !u!114 &695961266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2953,7 +2949,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 695961265}
-        m_MethodName: setVolume
+        m_MethodName: SetMusicVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3338,9 +3334,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 860581615}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!114 &860581619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3443,6 +3436,7 @@ GameObject:
   - component: {fileID: 878127315}
   - component: {fileID: 878127314}
   - component: {fileID: 878127313}
+  - component: {fileID: 878127316}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3515,6 +3509,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &878127316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878127312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57096899a75968c4b830cb167c7c779b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 317574706}
+  offset: {x: 0, y: 0, z: -10}
 --- !u!1 &909084260
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,10 +3996,9 @@ GameObject:
   - component: {fileID: 992384167}
   - component: {fileID: 992384166}
   - component: {fileID: 992384165}
-  - component: {fileID: 992384164}
   - component: {fileID: 992384163}
-  - component: {fileID: 992384162}
   - component: {fileID: 992384161}
+  - component: {fileID: 992384162}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -4030,7 +4037,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 1edfc26bdc7cee742b6ffff89832aae3,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4125,25 +4132,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 992384159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 992384164}
-          m_MethodName: ClickSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  sound: {fileID: 992384161}
+  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
+  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!114 &992384163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4161,7 +4155,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 992384164}
+        - m_Target: {fileID: 992384162}
           m_MethodName: HoverSound
           m_Mode: 1
           m_Arguments:
@@ -4184,9 +4178,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 992384161}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 992384162}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &992384165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4242,17 +4248,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 562302939}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -4859,9 +4854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 1308378706}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!114 &1308378710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5189,7 +5181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   car: {fileID: 317574706}
-  offset: {x: 0, y: 0, z: 10}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!212 &1360609876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5556,9 +5548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 1478358334}
-  hover: {fileID: 8300000, guid: 9f8dd199e37118a41ad0ea22e05112ba, type: 3}
-  click: {fileID: 8300000, guid: 289fa3df0d86c3a4280eac5ab62deb34, type: 3}
 --- !u!82 &1478358334
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6238,7 +6227,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6474004194595587645, guid: 71e53e2afb4b7794c81f8753786f81a8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 71e53e2afb4b7794c81f8753786f81a8, type: 3}
 --- !u!1 &1575057269
 GameObject:
@@ -6273,7 +6263,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.749975, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6884,7 +6874,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: c16b156e1a60dda4fa2420765e92f752, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6991,7 +6981,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.749975, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

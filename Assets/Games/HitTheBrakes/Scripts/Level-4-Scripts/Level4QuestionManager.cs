@@ -185,7 +185,7 @@ public class Level4QuestionManager : MonoBehaviour
         checkMarks.SetActive(true);
 
         // start score animation
-        StartCoroutine(FindObjectOfType<ScoreAnimation>().correctAnimation());
+        StartCoroutine(FindObjectOfType<ScoreAnimation>().CorrectAnimation());
     }
 
     public void StartWrongAnimations()
@@ -194,7 +194,7 @@ public class Level4QuestionManager : MonoBehaviour
         xConfetti.SetActive(true);
 
         // display red score color for wrong
-        StartCoroutine(FindObjectOfType<ScoreAnimation>().wrongAnimation());
+        StartCoroutine(FindObjectOfType<ScoreAnimation>().WrongAnimation());
     }
 
    

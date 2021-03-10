@@ -12,7 +12,7 @@ Acceleration - a (calculated from info given)
 a = g * (sin(theta) - mu * cos(theta))
 time = sqrt((2 * d) / a)
 
-We want to find for the final velocity, and there are two ways we can do that:
+We want to solve for the final velocity, and there are two ways we can do that:
 
 1. FV = IV + at
 2. FV = sqrt(IV^2 + 2 * a * d)
