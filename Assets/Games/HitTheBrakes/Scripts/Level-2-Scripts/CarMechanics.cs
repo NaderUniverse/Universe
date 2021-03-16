@@ -15,8 +15,11 @@ public class CarMechanics : MonoBehaviour
     public TMP_Text velocityText;
     public AudioSource gravelSound;
     public float pitchScale = 0.001f;
-    private float lateVelocity = 0;
-    public void setCar()
+    
+    // Unused
+    // private float lateVelocity = 0;
+
+    public void SetCar()
     {
         rigidBody.velocity = new Vector2(0,0);
         Debug.Log(spawnPoint.position);

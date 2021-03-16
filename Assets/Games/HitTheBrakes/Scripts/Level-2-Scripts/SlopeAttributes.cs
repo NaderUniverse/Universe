@@ -37,7 +37,7 @@ public class SlopeAttributes : MonoBehaviour
         text.position = spawn.position - new Vector3(0, 1.5f, 0);
         text.rotation = Quaternion.Euler(0, 0, -randomValues.getTheta());
         // put car at spawn
-        FindObjectOfType<CarMechanics>().setCar();
+        FindObjectOfType<CarMechanics>().SetCar();
         // place catching platform
         FindObjectOfType<PlatformPosition>().setPlatform();
     }

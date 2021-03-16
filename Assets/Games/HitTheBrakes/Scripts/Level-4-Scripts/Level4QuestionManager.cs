@@ -20,19 +20,10 @@ public class Level4QuestionManager : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text answer;
     public TMP_Text isCorrectText;
-    //physics variables
-    //given values
-    private double initialVelocity = 0.0;
-    private double gravity = 9.81f;
+
     //calculated values
-    private double finalVelocity = 0.0;
     private double carTime = 0.0;
     private double vanTime = 0.0;
-    private double acc = 0.0;
-    //rand values
-    private double distance  = 0.0;
-    private double accelaration = 0.0;
-
     private String questionAnswer;
     
     //feedback variables
@@ -41,7 +32,15 @@ public class Level4QuestionManager : MonoBehaviour
     public GameObject xConfetti;
     public GameObject checkMarks;
     public GameObject answerMenu;
-    // Start is called before the first frame update
+    
+    // Unused
+    // private double acc = 0.0;
+    // private double distance  = 0.0;
+    // private double accelaration = 0.0;
+    // private double finalVelocity = 0.0;
+    // private double initialVelocity = 0.0;
+    // private double gravity = 9.81f;
+
     void Start()
     {    //UNCOMMENT FOR LOLS
         // for(int i = 0; i < 30; i++)

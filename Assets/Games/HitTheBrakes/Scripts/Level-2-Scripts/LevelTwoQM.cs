@@ -16,14 +16,14 @@ public class LevelTwoQM : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text answer;
     public TMP_Text isCorrectText;
-    //physics variables
-    //given values
-    private double initialVelocity = 0.0;
+
+    // given values
     private double gravity = 9.81f;
+
     //calculated values
     private double finalVelocity = 0.0;
-    private double time = 0.0;
     private double acc = 0.0;
+
     //rand values
     private double mu = 0.0;
     private double dist = 0.0;
@@ -35,7 +35,11 @@ public class LevelTwoQM : MonoBehaviour
     public GameObject xConfetti;
     public GameObject checkMarks;
     public GameObject answerMenu;
-    // Start is called before the first frame update
+
+    // Unused
+    // private double initialVelocity = 0.0;
+    // private double time = 0.0;
+
     void Start()
     {        
         DisplayQuestion();
@@ -57,8 +61,6 @@ public class LevelTwoQM : MonoBehaviour
         FindObjectOfType<SlopeAttributes>().SetSlope();
         GameObject slope = GameObject.Find("Slope");
         SlopeAttributes sa = slope.GetComponent<SlopeAttributes>();
-        
-        string question = "";
 
         //getRandom values
         mu = Math.Round(sa.randomValues.getMU(), 2);
@@ -66,8 +68,8 @@ public class LevelTwoQM : MonoBehaviour
         theta = Math.Round(sa.randomValues.getTheta(), 2);
 
         //question
-        question = "The driver of the car above forgot to set the parking break before leaving the car! If the coefficient of friction is " +
-                    mu.ToString() + ", the distance between the start and bottom of the slope is " + dist.ToString() + 
+        string question = "The driver of the car above forgot to set the parking break before leaving the car! If the coefficient of friction is " +
+                    mu.ToString() + ", the distance between the start and bottom of the slope is " + dist.ToString() +
                     " m, and the angle of the slope is " + theta.ToString() + " degrees. Find the Velocity (m/s) to the nearest hundreth of the car when it reaches the bottom of the slope. hint:(Remember to use gravity)";
         //calculate the answer
         acc = calcAcc(gravity, theta * (Math.PI / 180), mu);

@@ -19,17 +19,18 @@ public class Level3QM : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text answer;
     public TMP_Text isCorrectText;
-    //physics variables
-    //given values
-    private double initialVelocity = 0.0;
-    private double gravity = 9.81f;
     //calculated values
     private double finalVelocity = 0.0;
     private double time = 0.0;
-    private double acc = 0.0;
     //rand values
     private double distance  = 0.0;
     private double accelaration = 0.0;
+    
+    //physics variables
+    // private double gravity = 9.81f; unused
+    //given values
+    // private double initialVelocity = 0.0; unused
+    // private double acc = 0.0; unused
     
     //feedback variables
     private int score = 0;

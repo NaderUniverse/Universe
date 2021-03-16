@@ -1403,6 +1403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &95874840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2741,7 +2744,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6474004194595587645, guid: 71e53e2afb4b7794c81f8753786f81a8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 71e53e2afb4b7794c81f8753786f81a8, type: 3}
 --- !u!4 &201754488 stripped
 Transform:
@@ -3070,6 +3074,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &223355657
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3573,6 +3580,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!1 &237255131
 GameObject:
   m_ObjectHideFlags: 0
@@ -4301,6 +4311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &259452626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4993,6 +5006,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &317284539
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5738,6 +5754,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &333277075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7422,6 +7441,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &456379910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7812,6 +7834,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &497824098
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8729,6 +8754,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &561686292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8936,6 +8964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &569722123
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10183,6 +10214,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &599883267
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10506,6 +10540,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &622494785
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10915,6 +10952,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &627183251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11697,6 +11737,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &712065034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12578,6 +12621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &738047299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13814,6 +13860,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &812516920
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14256,6 +14305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &813832444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14929,6 +14981,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &859375837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16728,7 +16783,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6474004194595587645, guid: 71e53e2afb4b7794c81f8753786f81a8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 71e53e2afb4b7794c81f8753786f81a8, type: 3}
 --- !u!1 &1016765192
 GameObject:
@@ -17424,6 +17480,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &1065180574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17782,6 +17841,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &1121564496
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18202,7 +18264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136216392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.016, y: 0.51, z: 0}
+  m_LocalPosition: {x: -4.016, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 575736692}
@@ -18618,6 +18680,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &1179790365
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21421,6 +21486,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &1369728469
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22050,6 +22118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &1396822776
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22820,6 +22891,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &1431318834
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23316,6 +23390,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &1472489146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25432,6 +25509,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &1664616313
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27985,6 +28065,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &1783928647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28754,6 +28837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!82 &1795917909
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29419,6 +29505,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &1818153043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29478,7 +29567,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1008205269}
-        m_MethodName: EnterQuestion
+        m_MethodName: CheckAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30164,6 +30253,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &1827320413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31059,6 +31151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &1901650490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33700,6 +33795,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &2050393974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34045,6 +34143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &2055397729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34355,6 +34456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &2079024858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35024,6 +35128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128d1a1bb689ca4eb05f1c6ffac2549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  hover: {fileID: 0}
+  click: {fileID: 0}
 --- !u!114 &2131080324
 MonoBehaviour:
   m_ObjectHideFlags: 0
