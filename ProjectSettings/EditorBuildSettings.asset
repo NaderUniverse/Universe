@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/Universe.unity
+    guid: b7a9467c3b96f3f4bb3e5e5178c53b3b
+  - enabled: 1
     path: Assets/Games/HitTheBrakes/Scenes/Menu.unity
     guid: 8ede6f6a3e461564bb7c5e82befe777b
   - enabled: 1
