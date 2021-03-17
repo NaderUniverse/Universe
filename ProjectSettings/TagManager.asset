@@ -18,6 +18,7 @@ TagManager:
   - endpoint
   - RNG
   - SpawnPoint
+  - WisemanHint
   layers:
   - Default
   - TransparentFX

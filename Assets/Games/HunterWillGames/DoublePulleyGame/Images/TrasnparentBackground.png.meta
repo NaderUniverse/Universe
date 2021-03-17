@@ -1,0 +1,1208 @@
+fileFormatVersion: 2
+guid: f14cc8ab0437bd342826f62e5ff40e5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 451592734321959085
+    second: TrasnparentBackground_0
+  - first:
+      213: -5771508216664002714
+    second: TrasnparentBackground_1
+  - first:
+      213: -3272499591489502823
+    second: TrasnparentBackground_2
+  - first:
+      213: 7739955386652786601
+    second: TrasnparentBackground_3
+  - first:
+      213: 3129524916823706584
+    second: TrasnparentBackground_4
+  - first:
+      213: 6044292642566997066
+    second: TrasnparentBackground_5
+  - first:
+      213: -799117898796776141
+    second: TrasnparentBackground_6
+  - first:
+      213: -3990672170982207546
+    second: TrasnparentBackground_7
+  - first:
+      213: -3266573651884405037
+    second: TrasnparentBackground_8
+  - first:
+      213: 8147983557537803530
+    second: TrasnparentBackground_9
+  - first:
+      213: -6077184093807335387
+    second: TrasnparentBackground_10
+  - first:
+      213: -374698589447183401
+    second: TrasnparentBackground_11
+  - first:
+      213: -5043196131606061537
+    second: TrasnparentBackground_12
+  - first:
+      213: -3297273710062423923
+    second: TrasnparentBackground_13
+  - first:
+      213: 6054169157508207123
+    second: TrasnparentBackground_14
+  - first:
+      213: -7358960778359528437
+    second: TrasnparentBackground_15
+  - first:
+      213: -9153156046478813174
+    second: TrasnparentBackground_16
+  - first:
+      213: -7837336812601385420
+    second: TrasnparentBackground_17
+  - first:
+      213: 1409610956755574845
+    second: TrasnparentBackground_18
+  - first:
+      213: 7587361949873533362
+    second: TrasnparentBackground_19
+  - first:
+      213: -5698778051073365785
+    second: TrasnparentBackground_20
+  - first:
+      213: -7495807746643063034
+    second: TrasnparentBackground_21
+  - first:
+      213: 5937988593736344982
+    second: TrasnparentBackground_22
+  - first:
+      213: -2840560483069794245
+    second: TrasnparentBackground_23
+  - first:
+      213: -6641366396602317256
+    second: TrasnparentBackground_24
+  - first:
+      213: -9073884067123623460
+    second: TrasnparentBackground_25
+  - first:
+      213: -6736896775085969613
+    second: TrasnparentBackground_26
+  - first:
+      213: 3531821350054194630
+    second: TrasnparentBackground_27
+  - first:
+      213: -2038342637373488149
+    second: TrasnparentBackground_28
+  - first:
+      213: -6780203130956302013
+    second: TrasnparentBackground_29
+  - first:
+      213: 2318318124047688485
+    second: TrasnparentBackground_30
+  - first:
+      213: 2653722251840976179
+    second: TrasnparentBackground_31
+  - first:
+      213: 8201341895840891099
+    second: TrasnparentBackground_32
+  - first:
+      213: 8949437283338780231
+    second: TrasnparentBackground_33
+  - first:
+      213: 6652283488876906224
+    second: TrasnparentBackground_34
+  - first:
+      213: -1056146901338246915
+    second: TrasnparentBackground_35
+  - first:
+      213: 7013073162869268058
+    second: TrasnparentBackground_36
+  - first:
+      213: -2203009027479210945
+    second: TrasnparentBackground_37
+  - first:
+      213: -6454260487623906813
+    second: TrasnparentBackground_38
+  - first:
+      213: -3899216663659734736
+    second: TrasnparentBackground_39
+  - first:
+      213: -4098368273225348714
+    second: TrasnparentBackground_40
+  - first:
+      213: 9177170225483154828
+    second: TrasnparentBackground_41
+  - first:
+      213: -2922336689092099730
+    second: TrasnparentBackground_42
+  - first:
+      213: 4230010251372473112
+    second: TrasnparentBackground_43
+  - first:
+      213: -9198492103922953084
+    second: TrasnparentBackground_44
+  - first:
+      213: -926360588496423642
+    second: TrasnparentBackground_45
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TrasnparentBackground_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 160
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da068600331644600800000000000000
+      internalID: 451592734321959085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 160
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f6e7f0bdb77efa0800000000000000
+      internalID: -5771508216664002714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99148a1c5feb592d0800000000000000
+      internalID: -3272499591489502823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 160
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af7fc68a68d96b60800000000000000
+      internalID: 7739955386652786601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_4
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 160
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbc207b45e4e6b20800000000000000
+      internalID: 3129524916823706584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_5
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 160
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4486b66224a1e350800000000000000
+      internalID: 6044292642566997066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 160
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335cf844186f8e4f0800000000000000
+      internalID: -799117898796776141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_7
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 160
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf8191ddc84e98c0800000000000000
+      internalID: -3990672170982207546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de87c6129ccaa2d0800000000000000
+      internalID: -3266573651884405037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0da3ce20e3731170800000000000000
+      internalID: 8147983557537803530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528a5f5d34189aba0800000000000000
+      internalID: -6077184093807335387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3292e3e9dcccaf0800000000000000
+      internalID: -374698589447183401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_12
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e1ffa96d7f20ab0800000000000000
+      internalID: -5043196131606061537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_13
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80be78c70bbd32d0800000000000000
+      internalID: -3297273710062423923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_14
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312176bb5cab40450800000000000000
+      internalID: 6054169157508207123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_15
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0429d95928bfd990800000000000000
+      internalID: -7358960778359528437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 96
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0859eb321579f080800000000000000
+      internalID: -9153156046478813174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_17
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 96
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e5dc361bf2c3390800000000000000
+      internalID: -7837336812601385420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d302aec52b1ff8310800000000000000
+      internalID: 1409610956755574845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_19
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 96
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1f68c6e79bb4960800000000000000
+      internalID: 7587361949873533362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_20
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 96
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8aaf35e8fd9e0b0800000000000000
+      internalID: -5698778051073365785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 96
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f08b4a19a89f790800000000000000
+      internalID: -7495807746643063034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_22
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 96
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695e9f94a29f76250800000000000000
+      internalID: 5937988593736344982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_23
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 96
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38ec936a4d4498d0800000000000000
+      internalID: -2840560483069794245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 64
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8368d43237025d3a0800000000000000
+      internalID: -6641366396602317256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_25
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 64
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd905063486131280800000000000000
+      internalID: -9073884067123623460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fa680a31cb182a0800000000000000
+      internalID: -6736896775085969613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_27
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 64
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdee143ecc830130800000000000000
+      internalID: 3531821350054194630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_28
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 64
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be302d0cb2a56b3e0800000000000000
+      internalID: -2038342637373488149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_29
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 64
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349bb5aec21e7e1a0800000000000000
+      internalID: -6780203130956302013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_30
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 64
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52366340d025c2020800000000000000
+      internalID: 2318318124047688485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_31
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 64
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335f789f35ae3d420800000000000000
+      internalID: 2653722251840976179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 32
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0002f600501d170800000000000000
+      internalID: 8201341895840891099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_33
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 32
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e7b050bc9c23c70800000000000000
+      internalID: 8949437283338780231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f644bb7698a15c50800000000000000
+      internalID: 6652283488876906224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_35
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 32
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0ba1b2dffc751f0800000000000000
+      internalID: -1056146901338246915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_36
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 32
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ed5a082e0735160800000000000000
+      internalID: 7013073162869268058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_37
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 32
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f347f1826f65d61e0800000000000000
+      internalID: -2203009027479210945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a665b584cdd66a0800000000000000
+      internalID: -6454260487623906813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_39
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03917447a1333e9c0800000000000000
+      internalID: -3899216663659734736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_40
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6990ca305cbaf17c0800000000000000
+      internalID: -4098368273225348714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_41
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85073582bbdb5f70800000000000000
+      internalID: 9177170225483154828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_42
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e610394b346c177d0800000000000000
+      internalID: -2922336689092099730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_43
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b215d79e304ba30800000000000000
+      internalID: 4230010251372473112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_44
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484df6cca24685080800000000000000
+      internalID: -9198492103922953084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrasnparentBackground_45
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625bfbce3f7e423f0800000000000000
+      internalID: -926360588496423642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
