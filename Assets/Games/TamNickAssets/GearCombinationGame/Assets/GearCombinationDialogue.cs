@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 
 
-public class Dialogue : MonoBehaviour
+public class GearCombinationDialogue : MonoBehaviour
 {
     public TextSound type;
     public TextMeshProUGUI textDisplay;

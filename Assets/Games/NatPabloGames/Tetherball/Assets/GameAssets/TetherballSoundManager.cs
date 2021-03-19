@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManagerScript : MonoBehaviour
+public class TetherballSoundManager : MonoBehaviour
 {
     public static int confirm = 0;
     public static int typeClip = 6;
@@ -24,6 +24,18 @@ public class SoundManagerScript : MonoBehaviour
       return null;
     }
 
+    // Start is called before the first frame update
+    /*
+    void Start()
+    {
+      //audioSrc.volume = 0.02f;
+      // Play the main game sound
+      audioSrc.clip = RandomClip();
+      audioSrc.loop = true;
+      audioSrc.Play();
+    }
+    */
+
     // Update is called once per frame
     void Update()
     {
@@ -32,12 +44,24 @@ public class SoundManagerScript : MonoBehaviour
         playClaps();
       }
 
+      if (confirm == 2)
+      {
+        playWrong();
+        //Debug.Log("wrong() call attempt");
+      }
+
       confirm = 0;
     }
 
     // Play audio that designates the congrats message.
     public void playClaps()
     {
+      //audioSrc.volume = 0.02f;
+
+      //if (clapsIndex < audioClips.Length)
+        //audioSrc.PlayOneShot(audioClips[4]);
+      //if (fireworksIndex < audioClips.Length)
+        //audioSrc.PlayOneShot(audioClips[5]);
       if (typeClip < audioClips.Length && typeClip >= 0)
         congratsSrc.PlayOneShot(audioClips[typeClip]);
     }

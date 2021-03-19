@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BreakableBox : MonoBehaviour
+public class TamNickBreakableBox : MonoBehaviour
 {
     private ParticleSystem particle;
 

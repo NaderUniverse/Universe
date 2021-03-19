@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Dialogue : MonoBehaviour
+public class BirthdayBashDialogue : MonoBehaviour
 {
 
   //public TextSound type;

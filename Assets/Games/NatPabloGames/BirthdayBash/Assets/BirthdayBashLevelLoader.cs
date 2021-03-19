@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelLoader : MonoBehaviour
+public class BirthdayBashLevelLoader : MonoBehaviour
 {
     public Animator transition;
     public float transitionTime =1f;
