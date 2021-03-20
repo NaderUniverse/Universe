@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// change texturesize and nativeResolution in unity editor
 public class TiledBackground : MonoBehaviour {
 
 	public int textureSize = 1;

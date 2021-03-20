@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
+
+// add your typewriter and pausemenuUI in unity editor inspector 
 public class PauseMenu : MonoBehaviour
 {
     public static bool PausedGame = false;
     public GameObject pauseMenuUI;
     public AudioMixer audioMixer;
+    public AudioSource typewriter;
 
     // Update is called once per frame
     void Update()
@@ -38,6 +41,7 @@ public class PauseMenu : MonoBehaviour
       // Put speed back to normal
       Time.timeScale = 1f;
       PausedGame = false;
+      typewriter.Play();
     }
 
     void Pause()
@@ -46,6 +50,7 @@ public class PauseMenu : MonoBehaviour
       // freeze the game
       Time.timeScale = 0f;
       PausedGame = true;
+      typewriter.Stop();
     }
 
     public void LoadMenu()
