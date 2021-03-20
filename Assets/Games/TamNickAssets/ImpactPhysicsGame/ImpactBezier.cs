@@ -2,19 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BezierScript : MonoBehaviour
+public class ImpactBezier : MonoBehaviour
 {
     private LineRenderer lineRenderer;
     public Transform p0;
     public Transform p1;
     public Transform p2;
-    public float CurvedlinestartWidth = 0.1f;
-    public float CurvedlineendWidth= 0.1f;
 
     void Start()
     {
         lineRenderer = gameObject.AddComponent<LineRenderer>();
-        
 
        // lineRenderer = GetComponent<LineRenderer>();
     }
@@ -22,17 +19,11 @@ public class BezierScript : MonoBehaviour
     void Update()
     {
         DrawQuadraticBezierCurve(p0.position, p1.position, p2.position);
-        lineRenderer.startWidth = CurvedlinestartWidth;
-        lineRenderer.endWidth = CurvedlineendWidth;
-        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
-        lineRenderer.startColor = Color.green;
-        lineRenderer.endColor = Color.green;
     }
 
     void DrawQuadraticBezierCurve(Vector3 point0, Vector3 point1, Vector3 point2)
     {
         lineRenderer.positionCount = 200;
-        
         float t = 0f;
         Vector3 B = new Vector3(0, 0, 0);
         for (int i = 0; i < lineRenderer.positionCount; i++)
