@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class UnityLineRender : MonoBehaviour
+// ULR - Unity Line Renderer
+public class SpringElasticULR : MonoBehaviour
 {
      //SpringInfo.text = "Score: " +  Convert.ToString(score) + "/1"
      // Start is called before the first frame update
