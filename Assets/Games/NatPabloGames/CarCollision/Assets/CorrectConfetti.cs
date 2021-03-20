@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Drag your particle system in, adjust your Object (EX. Question/GuiDisplay2/Treestages)
 public class CorrectConfetti : MonoBehaviour
 {
   public ParticleSystem confetti;
