@@ -28,7 +28,7 @@ public class PlanetsGUI : MonoBehaviour
     public TextMeshProUGUI textBody;
     public TextMeshProUGUI congrats;
     bool flag = false;
-    public SoundManager claps;
+    public PlanetsSoundManager claps;
     public TMP_InputField user_ans;
     public int start = 0;
     public VisualEffect fireworks;
