@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
+// check your setFloat string
 public class SetVolume : MonoBehaviour
 {
   public AudioMixer mixer;
