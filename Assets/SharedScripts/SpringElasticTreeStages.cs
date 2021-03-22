@@ -490,7 +490,7 @@ public class SpringElasticTreeStages : MonoBehaviour
             stoneObject.on = true;
             TE.setSentence("FANTASTIC! You got everything correct! Press enter to keep practicing.");
             MC.pauseSong();
-            VS.playRandom();
+            VS.playAudio();
         }
         else
         {

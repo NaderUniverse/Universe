@@ -37,8 +37,8 @@ public class Question : MonoBehaviour
   public static int stage = 0;
   public string answerText = "0";
   public float actualAnswer = 0;
-  public Dialogue mainDialogue;
-  public Dialogue dialogue1;
+  public DialogueCar mainDialogue;
+  public DialogueCar dialogue1;
   public AudioSource sound_correct;
   public AudioSource sound_incorrect;
   public AudioSource sound_game;
@@ -307,7 +307,9 @@ public class Question : MonoBehaviour
         "\nCoefficient of Restitution: " + COR.ToString("0.00"));
      }
    }
-
+    
+    // Consider changing the output text selection to an array of text 
+    // snippets with each index representing the typeClip to accompany it
    IEnumerator changeText()
    {
      // Keep track whether we entered this state before.
@@ -332,13 +334,13 @@ public class Question : MonoBehaviour
 
           Debug.Log("Ans 2: " + v_b);
      }
-
+     // SoundManager files are in the SharedScripts folder. Change the PlanetsSoundManager object to the correct class reference
      else if (stage == 3)
      {
 
        if (num_correct == num_questions)
        {
-         SoundManagerScript.confirm = 1;
+         PlanetsSoundManager.confirm = 1;
          correctConfetti = UnityEngine.Random.Range(1,4);
          Debug.Log(correctConfetti + "res");
          sound_game.Stop();
@@ -350,50 +352,50 @@ public class Question : MonoBehaviour
          if (rando == 1)
          {
            dialogue1.setSentence("YOU GOT THIS!");
-           SoundManagerScript.typeClip = 3;
+           PlanetsSoundManager.typeClip = 3;
          }
 
          else if (rando == 2)
          {
            dialogue1.setSentence("LET'S GET IT!");
-           SoundManagerScript.typeClip = 5;
+           PlanetsSoundManager.typeClip = 5;
          }
 
          else if (rando == 3)
          {
            dialogue1.setSentence("MARVELOUS!");
-           SoundManagerScript.typeClip = 0;
+           PlanetsSoundManager.typeClip = 0;
          }
 
          else if (rando == 4)
          {
            dialogue1.setSentence("YES! THAT'S IT!");
-           SoundManagerScript.typeClip = 2;
+           PlanetsSoundManager.typeClip = 2;
          }
 
          else if (rando == 5)
          {
            dialogue1.setSentence("EXCELLENT!");
-           SoundManagerScript.typeClip = 6;
+           PlanetsSoundManager.typeClip = 6;
          }
 
          else if (rando == 6)
          {
            dialogue1.setSentence("KEEP IT UP!");
-           SoundManagerScript.typeClip = 4;
+           PlanetsSoundManager.typeClip = 4;
          }
 
          else
          {
            dialogue1.setSentence("WONDERFUL!");
-           SoundManagerScript.typeClip = 1;
+           PlanetsSoundManager.typeClip = 1;
          }
        }
 
        else
        {
          mainDialogue.setSentence("Your score is: " + num_correct + "/2\n\nPress Enter to try again!");
-        // SoundManagerScript.confirm = incorrect;
+        // PlanetsSoundManager.confirm = incorrect;
        }
      }
 

@@ -65,7 +65,7 @@ public class GUIDisplay : MonoBehaviour
     {
          
         someObject = GameObject.Find("InputField");
-        button = GetComponent<ButtonSound>();
+        button = GetComponent<PlayButtonSound>();
         applause = GetComponent<ApplauseSound>();
         TE = GetComponent<Dialogue>(); 
         CSound = GetComponent<CorrectSound>();

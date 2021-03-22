@@ -301,7 +301,7 @@ IEnumerator changeText()
 
       if (num_correct == num_questions)
       {
-        SoundManagerScript.confirm = 1;
+        BirthdayBashSoundManager.confirm = 1;
         correctConfetti = UnityEngine.Random.Range(1,4);
         Debug.Log(correctConfetti + "res");
         sound_game.Stop();
@@ -314,43 +314,43 @@ IEnumerator changeText()
         if (rando == 1)
         {
           dialogue1.setSentence("GREAT JOB!");
-          SoundManagerScript.typeClip = 3;
+          BirthdayBashSoundManager.typeClip = 3;
         }
 
         else if (rando == 2)
         {
           dialogue1.setSentence("GOOD JOB!");
-          SoundManagerScript.typeClip = 5;
+          BirthdayBashSoundManager.typeClip = 5;
         }
 
         else if (rando == 3)
         {
           dialogue1.setSentence("MARVELOUS!");
-          SoundManagerScript.typeClip = 0;
+          BirthdayBashSoundManager.typeClip = 0;
         }
 
         else if (rando == 4)
         {
           dialogue1.setSentence("YES! THAT'S IT!");
-          SoundManagerScript.typeClip = 2;
+          BirthdayBashSoundManager.typeClip = 2;
         }
 
         else if (rando == 5)
         {
           dialogue1.setSentence("CONGRATS YOU WIN!");
-          SoundManagerScript.typeClip = 6;
+          BirthdayBashSoundManager.typeClip = 6;
         }
 
         else if (rando == 6)
         {
           dialogue1.setSentence("GREAT WORK!");
-          SoundManagerScript.typeClip = 4;
+          BirthdayBashSoundManager.typeClip = 4;
         }
 
         else
         {
           dialogue1.setSentence("CONGRATULATIONS!");
-          SoundManagerScript.typeClip = 1;
+          BirthdayBashSoundManager.typeClip = 1;
         }
       }
 

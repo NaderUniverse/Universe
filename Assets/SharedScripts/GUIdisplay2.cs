@@ -322,7 +322,7 @@ public class GUIdisplay2 : MonoBehaviour
     {
       if (correctVal == 1)
       {
-        SoundManagerScript.confirm = 1;
+        TetherballSoundManager.confirm = 1;
         victory.Play();
         mainDialogue.setSentence("Congrats, you got all parts correct!\n\nPress enter to generate a similar question.");
 
@@ -331,62 +331,62 @@ public class GUIdisplay2 : MonoBehaviour
         if (rando == 1)
         {
           dialogue1.setSentence("YOU GOT THIS!");
-          SoundManagerScript.typeClip = 3;
+          TetherballSoundManager.typeClip = 3;
         }
 
         else if (rando == 2)
         {
           dialogue1.setSentence("GREAT JOB!");
-          SoundManagerScript.typeClip = 5;
+          TetherballSoundManager.typeClip = 5;
         }
 
         else if (rando == 3)
         {
           dialogue1.setSentence("AMAZING!");
-          SoundManagerScript.typeClip = 0;
+          TetherballSoundManager.typeClip = 0;
         }
 
         else if (rando == 4)
         {
           dialogue1.setSentence("YES! THAT'S IT!");
-          SoundManagerScript.typeClip = 2;
+          TetherballSoundManager.typeClip = 2;
         }
 
         else if (rando == 5)
         {
           dialogue1.setSentence("CONGRATS!");
-          SoundManagerScript.typeClip = 6;
+          TetherballSoundManager.typeClip = 6;
         }
 
         else if (rando == 6)
         {
           dialogue1.setSentence("KEEP IT UP!");
-          SoundManagerScript.typeClip = 4;
+          TetherballSoundManager.typeClip = 4;
         }
 
         else
         {
           dialogue1.setSentence("WONDERFUL!");
-          SoundManagerScript.typeClip = 1;
+          TetherballSoundManager.typeClip = 1;
         }
       }
 
       else if (correctVal == 2)
       {
         mainDialogue.setSentence("Part two was incorrect.\nTry again!");
-        SoundManagerScript.confirm = incorrect;
+        TetherballSoundManager.confirm = incorrect;
       }
 
       else if (correctVal == 3)
       {
         mainDialogue.setSentence("Part one was incorrect.\nTry again!");
-        SoundManagerScript.confirm = incorrect;
+        TetherballSoundManager.confirm = incorrect;
       }
 
       else if (correctVal == 4)
       {
         mainDialogue.setSentence("Both parts were incorrect. Press enter to try again!");
-        SoundManagerScript.confirm = incorrect;
+        TetherballSoundManager.confirm = incorrect;
       }
     }
 

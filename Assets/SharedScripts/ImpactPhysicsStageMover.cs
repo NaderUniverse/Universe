@@ -630,7 +630,7 @@ public class ImpactPhysicsStageMover : MonoBehaviour
         if (Q1C && Q2C && Q3C && Q4C)    // All Correct
         {
             MC.pauseSong();
-            VS.playRandom();
+            VS.playAudio();
             //ballObject.on = true;
             TE.setSentence("FANTASTIC! You got everything correct! Press enter to keep practicing");
         }

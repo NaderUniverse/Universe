@@ -295,7 +295,7 @@ public class Question2Info : MonoBehaviour
       {
         if (num_correct == num_questions)
         {
-          SoundManagerScript.confirm = 1;
+          PlanetsSoundManager.confirm = 1;
           victory.Play();
           mainDialogue.setSentence("Congrats, you got all parts correct!\n\nPress enter to generate a similar question.");
 
@@ -304,50 +304,50 @@ public class Question2Info : MonoBehaviour
           if (rando == 1)
           {
             dialogue1.setSentence("YOU GOT THIS!");
-            SoundManagerScript.typeClip = 3;
+            PlanetsSoundManager.typeClip = 3;
           }
 
           else if (rando == 2)
           {
             dialogue1.setSentence("GREAT JOB!");
-            SoundManagerScript.typeClip = 5;
+            PlanetsSoundManager.typeClip = 5;
           }
 
           else if (rando == 3)
           {
             dialogue1.setSentence("AMAZING!");
-            SoundManagerScript.typeClip = 0;
+            PlanetsSoundManager.typeClip = 0;
           }
 
           else if (rando == 4)
           {
             dialogue1.setSentence("YES! THAT'S IT!");
-            SoundManagerScript.typeClip = 2;
+            PlanetsSoundManager.typeClip = 2;
           }
 
           else if (rando == 5)
           {
             dialogue1.setSentence("CONGRATS!");
-            SoundManagerScript.typeClip = 6;
+            PlanetsSoundManager.typeClip = 6;
           }
 
           else if (rando == 6)
           {
             dialogue1.setSentence("KEEP IT UP!");
-            SoundManagerScript.typeClip = 4;
+            PlanetsSoundManager.typeClip = 4;
           }
 
           else
           {
             dialogue1.setSentence("WONDERFUL!");
-            SoundManagerScript.typeClip = 1;
+            PlanetsSoundManager.typeClip = 1;
           }
         }
 
         else
         {
           mainDialogue.setSentence("Your score is: " + num_correct + "/3\n\nTry again!");
-          SoundManagerScript.confirm = incorrect;
+          PlanetsSoundManager.confirm = incorrect;
         }
       }
 

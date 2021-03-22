@@ -165,7 +165,7 @@ public class PlanetsGUI : MonoBehaviour
           mainDialogue.setSentence("");
           displayFireworks = 1;
           fireworks.Play();
-          SoundManager.confirm = 1;
+          PlanetsSoundManager.confirm = 1;
           // GUI.Label(new Rect(10, 225, 5, 5), "That's the right answer, congrats!\nClick \"Go\" to generate a new question!", style);
           textBody.text = "That's the right answer, congrats!\nPress enter to generate a new question!";
 
@@ -174,43 +174,43 @@ public class PlanetsGUI : MonoBehaviour
           if (rando == 1)
           {
             dialogue1.setSentence(" THAT WAS CORRECT!");
-            SoundManager.typeClip = 11;
+            PlanetsSoundManager.typeClip = 11;
           }
 
           else if (rando == 2)
           {
             dialogue1.setSentence("GREAT JOB!");
-            SoundManager.typeClip = 8;
+            PlanetsSoundManager.typeClip = 8;
           }
 
           else if (rando == 3)
           {
             dialogue1.setSentence("AMAZING!");
-            SoundManager.typeClip = 6;
+            PlanetsSoundManager.typeClip = 6;
           }
 
           else if (rando == 4)
           {
             dialogue1.setSentence("YES! THAT'S IT!");
-            SoundManager.typeClip = 10;
+            PlanetsSoundManager.typeClip = 10;
           }
 
           else if (rando == 5)
           {
             dialogue1.setSentence("CONGRATS!");
-            SoundManager.typeClip = 11;
+            PlanetsSoundManager.typeClip = 11;
           }
 
           else if (rando == 6)
           {
             dialogue1.setSentence("KEEP IT UP!");
-            SoundManager.typeClip = 9;
+            PlanetsSoundManager.typeClip = 9;
           }
 
           else
           {
             dialogue1.setSentence("AWESOME!");
-            SoundManager.typeClip = 10;
+            PlanetsSoundManager.typeClip = 10;
           }
 
           Debug.Log("yes");
@@ -218,8 +218,8 @@ public class PlanetsGUI : MonoBehaviour
 
         else
         {
-          //SoundManager.confirm = 2;
-          SoundManager.confirm = incorrect;
+          //PlanetsSoundManager.confirm = 2;
+          PlanetsSoundManager.confirm = incorrect;
           // GUI.Label(new Rect(10, 225, 5, 5), "Sorry, that's incorrect. Click \"Go\" to generate a new question.", style);
           //textBody.text = "Sorry, that's incorrect.\nPress enter to generate a new question.";
           mainDialogue.setSentence("Sorry, that's incorrect.\nPress enter to generate a new question.");

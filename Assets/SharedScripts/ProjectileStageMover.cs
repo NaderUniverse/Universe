@@ -605,7 +605,7 @@ public class ProjectileStageMover : MonoBehaviour
         if(Q1C && Q2C && Q3C && Q4C)    // All Correct
         {
             MC.pauseSong();
-            VS.playRandom();
+            VS.playAudio();
             ballObject.on = true;
             TE.setSentence("FANTASTIC! You got everything correct! Press enter to keep practicing");
         }
@@ -679,7 +679,7 @@ public class ProjectileStageMover : MonoBehaviour
                    Q1C = true;
                     playEffects();
                     CS.playAudio();
-                    score += score + 1;
+                    score += score + 1; // score = 2 * score + 1?
                     scoreText.text = "Score: " +  Convert.ToString(score) + "/4";
                     StartCoroutine(ChangeColor());
                }
@@ -708,7 +708,7 @@ public class ProjectileStageMover : MonoBehaviour
                    Q2C = true;
                     playEffects();
                     CS.playAudio();
-                    score = score + 1;
+                    score += 1;
                     scoreText.text = "Score: " +  Convert.ToString(score) + "/4";
                     StartCoroutine(ChangeColor());
                }
@@ -753,18 +753,18 @@ public class ProjectileStageMover : MonoBehaviour
 
             Stage6();
         }
-        else if(stage == 6)
+        else if (stage == 6)
         {
             Stage7();
         }
-        else if(stage == 7)     // Stage 4: Question 4
+        else if (stage == 7)     // Stage 4: Question 4
         {
            // SetImage4();
             answer = getAnswer();
-            if(answer >= (maxHeight * 0.98) && answer <= (maxHeight * 1.02))
+            if (answer >= (maxHeight * 0.98) && answer <= (maxHeight * 1.02))
                { 
-                   Q4C = true;
-                   playEffects();
+                    Q4C = true;
+                    playEffects();
                     CS.playAudio();
                     score = score + 1;
                     scoreText.text = "Score: " +  Convert.ToString(score) + "/4";
@@ -788,19 +788,19 @@ public class ProjectileStageMover : MonoBehaviour
         else if(stage == 9) // Stage 5: Post game. Shows results
         {
             //TargetBox.enabled = true;
-            BB.ResetTarget();
+            // BB.ResetTarget();  BB has no public methods, and even if it did, ResetTarget is not one of them.
             //ballObject.enabled = true;
             stage = 0;
             MC.unpauseSong();
             ballObject.resetPosition();
             rando = UnityEngine.Random.Range(1,8);
-        rando1 = UnityEngine.Random.Range(1,8);
-        rando2 = UnityEngine.Random.Range(1,8);
-        rando3 = UnityEngine.Random.Range(1,8);
-        wrongRando = UnityEngine.Random.Range(1,8);
-        wrongRando1 = UnityEngine.Random.Range(1,8);
-        wrongRando2 = UnityEngine.Random.Range(1,8);
-        wrongRando3 = UnityEngine.Random.Range(1,8);
+            rando1 = UnityEngine.Random.Range(1,8);
+            rando2 = UnityEngine.Random.Range(1,8);
+            rando3 = UnityEngine.Random.Range(1,8);
+            wrongRando = UnityEngine.Random.Range(1,8);
+            wrongRando1 = UnityEngine.Random.Range(1,8);
+            wrongRando2 = UnityEngine.Random.Range(1,8);
+            wrongRando3 = UnityEngine.Random.Range(1,8);
 
             Stage1();
             score = 0;

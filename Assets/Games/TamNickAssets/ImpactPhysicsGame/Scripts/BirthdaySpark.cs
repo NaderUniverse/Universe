@@ -14,11 +14,11 @@ public class BirthdaySpark : MonoBehaviour
     void Update()
     {
         
-        if(TreeStages.birthdaySpark == 0)
+        if(ImpactPhysicsTreeStages.birthdaySpark == 0)
         {
             gameObject.GetComponent<ParticleSystem>().Stop();
         }
-        else if(TreeStages.birthdaySpark == 1)
+        else if(ImpactPhysicsTreeStages.birthdaySpark == 1)
         {
             gameObject.GetComponent<ParticleSystem>().Play();
         }

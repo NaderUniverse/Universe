@@ -300,7 +300,7 @@ public class SpringElasticStageMover : MonoBehaviour
         if (Q1C)    // All Correct
         {
             MC.pauseSong();
-            VS.playRandom();
+            VS.playAudio();
 
             TE.setSentence("FANTASTIC! You got everything correct! Press ENTER to keep practicing!");
         }

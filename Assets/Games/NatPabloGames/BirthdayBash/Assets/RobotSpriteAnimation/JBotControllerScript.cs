@@ -5,7 +5,7 @@ using UnityEngine;
 public class JBotControllerScript : MonoBehaviour
 {
     // Start is called before the first frame update
-     [SerializeField] float      m_speed = 4.0f;
+    [SerializeField] float      m_speed = 4.0f;
     [SerializeField] float      m_jumpForce = 7.5f;
 
     private Animator            m_animator;

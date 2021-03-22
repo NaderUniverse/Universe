@@ -14,11 +14,11 @@ public class CheckConfetti : MonoBehaviour
     void Update()
     {
         
-        if(TreeStages.correctChecks == 0)
+        if(ImpactPhysicsTreeStages.correctChecks == 0)
          {
              gameObject.GetComponent<ParticleSystem>().Stop();
          }
-         else if(TreeStages.correctChecks == 1)
+         else if(ImpactPhysicsTreeStages.correctChecks == 1)
          {
              gameObject.GetComponent<ParticleSystem>().Play();
          }
