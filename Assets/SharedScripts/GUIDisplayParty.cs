@@ -30,8 +30,8 @@ public class GUIDisplayParty : MonoBehaviour
     public static int stage = 0;
     public string answerText = "0";
     public float actualAnswer = 0;
-    public Dialogue mainDialogue;
-    public Dialogue dialogue1;
+    public BirthdayBashDialogue mainDialogue;
+    public BirthdayBashDialogue dialogue1;
     public AudioSource sound_correct;
     public AudioSource sound_incorrect;
     public AudioSource sound_game;
