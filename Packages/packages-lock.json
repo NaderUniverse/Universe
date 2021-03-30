@@ -73,7 +73,11 @@
       "dependencies": {}
     },
     "com.unity.ads": {
+<<<<<<< HEAD
       "version": "3.6.1",
+=======
+      "version": "3.5.2",
+>>>>>>> 45bfe620bd9c89ccd7496c48e237eef0cfe8cfe9
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -154,6 +158,19 @@
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.purchasing": {
+      "version": "3.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.unityanalytics": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.androidjni": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -251,6 +268,16 @@
       "source": "registry",
       "dependencies": {
         "com.unity.shadergraph": "10.3.2"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.legacyinputhelpers": {
+      "version": "2.1.7",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.vr": "1.0.0",
+        "com.unity.modules.xr": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
