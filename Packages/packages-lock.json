@@ -149,15 +149,6 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.purchasing": {
-      "version": "2.2.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.purchasing": {
       "version": "3.0.1",
       "depth": 0,
       "source": "registry",
@@ -263,16 +254,6 @@
       "source": "registry",
       "dependencies": {
         "com.unity.shadergraph": "10.3.2"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.7",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.vr": "1.0.0",
-        "com.unity.modules.xr": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
