@@ -73,11 +73,7 @@
       "dependencies": {}
     },
     "com.unity.ads": {
-<<<<<<< HEAD
-      "version": "3.6.1",
-=======
       "version": "3.5.2",
->>>>>>> 45bfe620bd9c89ccd7496c48e237eef0cfe8cfe9
       "depth": 0,
       "source": "registry",
       "dependencies": {
