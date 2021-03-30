@@ -52,6 +52,7 @@ public class PulleyQuestionManager : MonoBehaviour
         {
             //if we are on the third question part we change the time between 2 to 3 seconds
             t = Random.Range(2, 3);
+           
         }
     }
     void Math()
