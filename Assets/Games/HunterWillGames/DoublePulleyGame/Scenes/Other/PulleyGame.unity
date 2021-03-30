@@ -166,7 +166,7 @@ MonoBehaviour:
   - {fileID: 1862416283}
   - {fileID: 1003370519}
   m_Bounds:
-    m_Center: {x: 0.32478532, y: 0.23714507, z: 0}
+    m_Center: {x: 0.32478508, y: 0.23714507, z: 0}
     m_Extent: {x: 0.38728318, y: 0.2494632, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1689,7 +1689,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.052863598, y: 0.13711333}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.7261167
+  m_Distance: 0.7261165
   m_MaxDistanceOnly: 0
 --- !u!50 &350402350
 Rigidbody2D:
@@ -3277,7 +3277,7 @@ MonoBehaviour:
   - {fileID: 1591947768}
   - {fileID: 526259726}
   m_Bounds:
-    m_Center: {x: -0.05969663, y: -0.4081339, z: 0}
+    m_Center: {x: -0.05969663, y: -0.40813342, z: 0}
     m_Extent: {x: 0.16136783, y: 0.4164597, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -3519,7 +3519,7 @@ RelativeJoint2D:
   m_MaxTorque: 10000
   m_CorrectionScale: 0.3
   m_AutoConfigureOffset: 1
-  m_LinearOffset: {x: 0, y: -0.747}
+  m_LinearOffset: {x: 0, y: -0.7470002}
   m_AngularOffset: 0
 --- !u!50 &1124505263
 Rigidbody2D:
