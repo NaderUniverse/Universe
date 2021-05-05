@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 public class RopeBridge : MonoBehaviour
@@ -24,12 +26,15 @@ public class RopeBridge : MonoBehaviour
             this.ropeSegments.Add(new RopeSegment(ropeStartPoint));
             ropeStartPoint.y -= ropeSegLen;
         }
+
+     
     }
 
     // Update is called once per frame
     void Update()
     {
         this.DrawRope();
+     
     }
 
     private void FixedUpdate()
@@ -77,6 +82,8 @@ public class RopeBridge : MonoBehaviour
             RopeSegment firstSeg = this.ropeSegments[i];
             RopeSegment secondSeg = this.ropeSegments[i + 1];
 
+
+
             float dist = (firstSeg.posNow - secondSeg.posNow).magnitude;
             float error = Mathf.Abs(dist - this.ropeSegLen);
             Vector2 changeDir = Vector2.zero;
@@ -113,13 +120,20 @@ public class RopeBridge : MonoBehaviour
         lineRenderer.endWidth = lineWidth;
 
         Vector3[] ropePositions = new Vector3[this.segmentLength];
+
         for (int i = 0; i < this.segmentLength; i++)
         {
             ropePositions[i] = this.ropeSegments[i].posNow;
+          
         }
 
         lineRenderer.positionCount = ropePositions.Length;
         lineRenderer.SetPositions(ropePositions);
+
+      
+
+     
+        
     }
 
     public struct RopeSegment
@@ -131,6 +145,11 @@ public class RopeBridge : MonoBehaviour
         {
             this.posNow = pos;
             this.posOld = pos;
+        }
+
+        internal static T AddComponent<T>()
+        {
+            throw new NotImplementedException();
         }
     }
 }

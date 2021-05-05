@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
-using UnityEditor.VFX;
+//using UnityEditor.VFX;
 //using UnityEditor.Experimental.Rendering.HDPipeline;
-using UnityEditor.VFX.UI;
+//using UnityEditor.VFX.UI;
 
 public class FireworkCheck : MonoBehaviour
 {

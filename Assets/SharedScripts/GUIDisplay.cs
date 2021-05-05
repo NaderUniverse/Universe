@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.VFX;
-using UnityEditor.VFX;
+//using UnityEngine.VFX;
+//using UnityEditor.VFX;
 //using UnityEditor.Experimental.Rendering.HDPipeline;
-using UnityEditor.VFX.UI;
+//using UnityEditor.VFX.UI;
 
 public class GUIDisplay : MonoBehaviour
 {
