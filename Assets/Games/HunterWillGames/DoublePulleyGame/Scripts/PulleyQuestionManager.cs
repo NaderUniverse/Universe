@@ -24,7 +24,7 @@ public class PulleyQuestionManager : MonoBehaviour
     public float t, distance, acceleration, xB,xA;//t is inbetween 1.0 - 3.0, for part 3) needs to be inbetween 2.0 - 3.0 could use two variables for this
     public float tmp, VB, VA, DTA;//DTA stands for distance traveled for A
     //Text/strings
-    public Text input, output;
+    public TMP_Text input, output;
     public string question;
     private string answer;
     public TMP_InputField uInput;
@@ -45,7 +45,7 @@ public class PulleyQuestionManager : MonoBehaviour
         Math();
         // if enter button is pressed enter question
         if (Input.GetButtonDown("Submit"))
-        {
+        {   
             EnterAnswer();
         }
         if(questionPart == 3)
@@ -72,43 +72,71 @@ public class PulleyQuestionManager : MonoBehaviour
     }
     void DisplayQuestion()
     {
+        string question = "";
+        string question1 = "";
+
+        question = "The king has been kidnapped and is being held hostage by an evil wizard, to save him.\n "
+            + "you will have to answer 3 questions on double \n pulleys are you up for the task? ";
+
+        question1 = "The Kings pulley system is released from rest, given that the king on the right weighs %d " +
+            "and the king on the left weighs %d. Find the final velocity of the kings after %." +
+            "1f seconds after releasing the system from rest.";
+        if (Input.GetButtonDown("Submit"))
+        {
+            if(questionPart == 1)
+            {
+                StartCoroutine(TypeQuestion(question1));
+            }
+            
+        }
+        StartCoroutine(TypeQuestion(question));
 
     }
     void EnterAnswer()
     {
-        switch(questionPart)
+        string question1 = "";
+
+        question1 = "The Kings pulley system is released from rest, given that the king on the right weighs \n " +
+            "and the king on the left weighs \n " + a + " Find the final velocity of the kings after \n" + t
+            +"seconds after releasing the system from rest.";
+                 if (questionPart == 1)
+                {
+                    StartCoroutine(TypeQuestion(question1));
+                }
+        switch (questionPart)
         {
             case 1:
-                  if (uInput.text.Equals(VB.ToString()))
+             
+                if (uInput.text.Equals(VB.ToString()))
                   {
-                  Debug.Log("Congrats :)");
+                   // output.text = "Congrats, you have solved my first question can you solve the second one though let us find out.";
                     questionPart++;
                   }
                   else
                   {
-                    Debug.Log("sorry try again");
-                  }
+                   //output.text = "Try again maybe they should have sent someone else to save the king.";
+                }
                break;
             case 2:
                 if (uInput.text.Equals(acceleration.ToString()))
                 {
-                    Debug.Log("Congrats :), you have completed 2/3 parts for this question");
+                    output.text = "Wow, you really know your stuff on to the last and hardest of my questions.";
                     questionPart++;
                 }
                 else
                 {
-                    Debug.Log("sorry try again");
+                    output.text = "Wrong!";
                 }
                 break;
             case 3:
                 if (uInput.text.Equals(DTA.ToString()))
                 {
-                    Debug.Log("Congrats :), you have gotten all of the parts to this question correct");
+                    output.text = "You have defeated me the king is yours; I greatly underestimated your knowledge in double pulleys.";
                 }
                 else
                 {
 
-                    Debug.Log("sorry try again");
+                    output.text = "Wrong!";
                 }
                 break;
 
@@ -119,6 +147,10 @@ public class PulleyQuestionManager : MonoBehaviour
     void StopAnimations()
     {
 
+        //stops all coroutines
+        StopAllCoroutines();
+
+
     }
     void StartCorrectAnimations()
     {
@@ -128,8 +160,20 @@ public class PulleyQuestionManager : MonoBehaviour
     {
 
     }
-  //  IEnumerator TypeQuestion(string question)
-  //  {
+    IEnumerator TypeQuestion(string question)
+    {
+        
+        // create the empty text
+        output.text = "";
+        // for each letter in question
+        foreach (char letter in question.ToCharArray())
+        {
+            //display one letter at a time
+            output.text += letter;
 
-   // }
+            // wait 0.05 seconds between letters added
+            yield return new WaitForSeconds(0.05f);
+        }
+       
+    }//end of TypeQuestion
 }
