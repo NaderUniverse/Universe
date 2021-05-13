@@ -19,6 +19,7 @@ public class PulleyQuestionManager : MonoBehaviour
     public int a, b;//A needs to be between 2-4 and B needs to be inbetween 5-7
     public int Score = 0;
     public int questionPart = 1;
+    public int QuestionCounter = 1;
     //float
     //distance is between 0.25m - 2.0m for part 2)xA,xB is distance traveled 
     public float t, distance, acceleration, xB,xA;//t is inbetween 1.0 - 3.0, for part 3) needs to be inbetween 2.0 - 3.0 could use two variables for this
@@ -96,25 +97,30 @@ public class PulleyQuestionManager : MonoBehaviour
     {
         string question1 = "";
 
-        question1 = "The Kings pulley system is released from rest, given that the king on the right weighs \n " +
-            "and the king on the left weighs \n " + a + " Find the final velocity of the kings after \n" + t
-            +"seconds after releasing the system from rest.";
-                 if (questionPart == 1)
-                {
-                    StartCoroutine(TypeQuestion(question1));
-                }
         switch (questionPart)
         {
             case 1:
-             
-                if (uInput.text.Equals(VB.ToString()))
-                  {
-                   // output.text = "Congrats, you have solved my first question can you solve the second one though let us find out.";
-                    questionPart++;
-                  }
-                  else
-                  {
-                   //output.text = "Try again maybe they should have sent someone else to save the king.";
+               
+                    if (uInput.text.Equals(VB.ToString()))
+                    {
+                        output.text = "Congrats, you have solved my first question can you solve the second one though let us find out.";
+                        questionPart++;
+                    }
+                    else
+                    {
+                        output.text = "Try again maybe they should have sent someone else to save the king.";
+                    }
+
+                
+                if(uInput.GetComponent<TMP_InputField>().isFocused == false && QuestionCounter == 1)
+                {
+                    question1 = "The Kings pulley system is released from rest, given that the king on the right weighs " + b +
+                               "kg, and the king on the left weighs " + a + "kg, Find the final velocity of both kings " + t
+                               + " seconds after releasing the system from rest.";
+                    
+                        StartCoroutine(TypeQuestion(question1));
+                    
+                    QuestionCounter++;
                 }
                break;
             case 2:
