@@ -20,6 +20,7 @@ public class PulleyQuestionManager : MonoBehaviour
     public int Score = 0;
     public int questionPart = 1;
     public int QuestionCounter = 1;
+    public int tChange = 0;
     //float
     //distance is between 0.25m - 2.0m for part 2)xA,xB is distance traveled 
     public float t, distance, acceleration, xB,xA;//t is inbetween 1.0 - 3.0, for part 3) needs to be inbetween 2.0 - 3.0 could use two variables for this
@@ -35,7 +36,7 @@ public class PulleyQuestionManager : MonoBehaviour
     {
         DisplayQuestion();
 
-        t = Random.Range(1, 3);
+        t = (float)Math.Round(Random.Range(1.0f, 3.0f),2);
         a = Random.Range(2, 4);
         b = Random.Range(5,7);
         xB = Random.Range((float)0.25, 2);
@@ -44,20 +45,20 @@ public class PulleyQuestionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Math();
+        qMath();
         // if enter button is pressed enter question
         if (Input.GetButtonDown("Submit"))
         {   
             EnterAnswer();
         }
-        if(questionPart == 3)
+        if(questionPart == 3 && tChange == 0)
         {
             //if we are on the third question part we change the time between 2 to 3 seconds
-            t = Random.Range(2, 3);
-           
+            t = (float)Math.Round(Random.Range(2.0f, 3.0f),2);
+            tChange++;
         }
     }
-    void Math()
+    void qMath()
     {
         
 

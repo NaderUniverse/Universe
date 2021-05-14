@@ -2423,6 +2423,8 @@ MonoBehaviour:
   b: 0
   Score: 0
   questionPart: 1
+  QuestionCounter: 1
+  tChange: 0
   t: 0
   distance: 0
   acceleration: 0
@@ -3030,7 +3032,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -182, y: -160}
+  m_AnchoredPosition: {x: -129.68, y: -77.555}
   m_SizeDelta: {x: 349.8553, y: 95.6082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &961833499
@@ -3206,7 +3208,7 @@ MonoBehaviour:
   - {fileID: 1982551583}
   - {fileID: 509592122}
   m_Bounds:
-    m_Center: {x: -0.13786589, y: -0.09219095, z: 0}
+    m_Center: {x: -0.13786589, y: -0.09219119, z: 0}
     m_Extent: {x: 0.2020386, y: 0.46719125, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -4194,8 +4196,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -201, y: -157}
-  m_SizeDelta: {x: 474.6383, y: 119.8896}
+  m_AnchoredPosition: {x: -129.68, y: -77.555}
+  m_SizeDelta: {x: 474.6383, y: 119.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1174328526
 MonoBehaviour:
@@ -8348,7 +8350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 333, y: -118}
+  m_AnchoredPosition: {x: 281.5, y: -66}
   m_SizeDelta: {x: 170.9967, y: 23.8908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1890991435
