@@ -28,6 +28,7 @@ public class PulleyQuestionManager : MonoBehaviour
     public TMP_Text input, output;
     public string question;
     private string answer;
+    string Ans;
     public TMP_InputField uInput;
     // Start is called before the first frame update
     void Start()
@@ -58,11 +59,15 @@ public class PulleyQuestionManager : MonoBehaviour
     }
     void Math()
     {
+        
+
         //first question
         tmp = (2 * xB) / t;
         VB = tmp;
         VA = -VB / 2;
-        
+
+        Ans = VB + "," + VA;
+
         //Second question
         tmp = (2 * xB) / (t * t);
         acceleration = tmp;
@@ -79,9 +84,7 @@ public class PulleyQuestionManager : MonoBehaviour
         question = "The king has been kidnapped and is being held hostage by an evil wizard, to save him.\n "
             + "you will have to answer 3 questions on double \n pulleys are you up for the task? ";
 
-        question1 = "The Kings pulley system is released from rest, given that the king on the right weighs %d " +
-            "and the king on the left weighs %d. Find the final velocity of the kings after %." +
-            "1f seconds after releasing the system from rest.";
+       
         if (Input.GetButtonDown("Submit"))
         {
             if(questionPart == 1)
@@ -95,16 +98,21 @@ public class PulleyQuestionManager : MonoBehaviour
     }
     void EnterAnswer()
     {
+        //Creates an empty string for the 3 question parts
         string question1 = "";
+        string question2 = "";
+        string question3 = "";
+
 
         switch (questionPart)
         {
             case 1:
                
-                    if (uInput.text.Equals(VB.ToString()))
+                    if (uInput.text.Equals(Ans))
                     {
-                        output.text = "Congrats, you have solved my first question can you solve the second one though let us find out.";
-                        questionPart++;
+                        output.text = "Congrats, you have solved my first question can you solve the second one though let us find out. \n Press enter to continue...";
+                        questionPart++; 
+                        QuestionCounter++;
                     }
                     else
                     {
@@ -120,29 +128,46 @@ public class PulleyQuestionManager : MonoBehaviour
                     
                         StartCoroutine(TypeQuestion(question1));
                     
-                    QuestionCounter++;
-                }
+
+                  
+                }  
+              
                break;
             case 2:
                 if (uInput.text.Equals(acceleration.ToString()))
                 {
                     output.text = "Wow, you really know your stuff on to the last and hardest of my questions.";
                     questionPart++;
+                    QuestionCounter++;
                 }
                 else
                 {
                     output.text = "Wrong!";
                 }
-                break;
+                if (uInput.GetComponent<TMP_InputField>().isFocused == false && QuestionCounter == 2)
+                {
+                    question2 = "This is question 2 how cool";
+                    StartCoroutine(TypeQuestion(question2));
+
+                }
+                
+                    break;
             case 3:
                 if (uInput.text.Equals(DTA.ToString()))
                 {
                     output.text = "You have defeated me the king is yours; I greatly underestimated your knowledge in double pulleys.";
+                    QuestionCounter++;
+                    questionPart++;
                 }
                 else
                 {
-
                     output.text = "Wrong!";
+                }
+                if (uInput.GetComponent<TMP_InputField>().isFocused == false && QuestionCounter == 3)
+                {
+                    question3 = "This is question 3 how cool";
+                    StartCoroutine(TypeQuestion(question3));
+
                 }
                 break;
 
