@@ -10,20 +10,21 @@ using System;
 public class PulleyQuestionManager : MonoBehaviour
 {
     //TmpPro
-
-
+    public Button StartButton;
+    public TMP_Text BText;
 
 
     //Declarations
     //Int
     public int a, b;//A needs to be between 2-4 and B needs to be inbetween 5-7
     public int Score = 0;
-    public int questionPart = 1;
+    public int questionPart = 0;
     public int QuestionCounter = 1;
     public int tChange = 0;
+    public int wrong = 0;
     //float
     //distance is between 0.25m - 2.0m for part 2)xA,xB is distance traveled 
-    public float t, distance, acceleration, xB,xA;//t is inbetween 1.0 - 3.0, for part 3) needs to be inbetween 2.0 - 3.0 could use two variables for this
+    public float t, distance, acceleration, xB, xA;//t is inbetween 1.0 - 3.0, for part 3) needs to be inbetween 2.0 - 3.0 could use two variables for this
     public float tmp, VB, VA, DTA;//DTA stands for distance traveled for A
     //Text/strings
     public TMP_Text input, output;
@@ -31,14 +32,15 @@ public class PulleyQuestionManager : MonoBehaviour
     private string answer;
     string Ans;
     public TMP_InputField uInput;
+    public bool Test;
     // Start is called before the first frame update
     void Start()
     {
         DisplayQuestion();
-
-        t = (float)Math.Round(Random.Range(1.0f, 3.0f),2);
+        StartButton.onClick.AddListener(TaskOnClick);
+        t = (float)Math.Round(Random.Range(1.0f, 3.0f), 2);
         a = Random.Range(2, 4);
-        b = Random.Range(5,7);
+        b = Random.Range(5, 7);
         xB = Random.Range((float)0.25, 2);
     }
 
@@ -46,21 +48,53 @@ public class PulleyQuestionManager : MonoBehaviour
     void Update()
     {
         qMath();
+        Test = uInput.GetComponent<TMP_InputField>().isFocused;
         // if enter button is pressed enter question
         if (Input.GetButtonDown("Submit"))
-        {   
-            EnterAnswer();
+        {
+
+            EnterAnswer();      
+            
         }
-        if(questionPart == 3 && tChange == 0)
+        if (questionPart == 3 && tChange == 0)
         {
             //if we are on the third question part we change the time between 2 to 3 seconds
-            t = (float)Math.Round(Random.Range(2.0f, 3.0f),2);
+            t = (float)Math.Round(Random.Range(2.0f, 3.0f), 2);
             tChange++;
         }
     }
+    void TaskOnClick()
+    {
+        string question1 = "";
+        string question2 = "";
+        string question3 = "";
+        BText.text = "Click to see \n question again..";
+
+        question1 = "The Kings pulley system is released from rest, given that the king on the right weighs " + b +
+                               "kg, and the king on the left weighs " + a + "kg, Find the final velocity of both kings " + t
+                               + " seconds after releasing the system from rest.";
+        question2 = "This is asking for acceleration";
+
+        question3 = " This is asking for dta";
+
+
+        if(QuestionCounter == 1)
+        {
+              StartCoroutine(TypeQuestion(question1));
+        }
+        if (QuestionCounter == 2)
+        {
+            StartCoroutine(TypeQuestion(question2));
+        }
+        if (QuestionCounter == 3)
+        {
+            StartCoroutine(TypeQuestion(question3));
+        }
+
+    }
     void qMath()
     {
-        
+
 
         //first question
         tmp = (2 * xB) / t;
@@ -74,66 +108,46 @@ public class PulleyQuestionManager : MonoBehaviour
         acceleration = tmp;
 
         //Third question
-        
+
         DTA = (float)(0.5 * acceleration * (t * t));
     }
     void DisplayQuestion()
     {
         string question = "";
-        string question1 = "";
+       
 
         question = "The king has been kidnapped and is being held hostage by an evil wizard, to save him.\n "
-            + "you will have to answer 3 questions on double \n pulleys are you up for the task? ";
+            + "you will have to answer 3 questions on double \n pulleys are you up for the task?\n Press the start button to begin. ";
 
-       
-        if (Input.GetButtonDown("Submit"))
-        {
-            if(questionPart == 1)
-            {
-                StartCoroutine(TypeQuestion(question1));
-            }
-            
-        }
         StartCoroutine(TypeQuestion(question));
 
     }
     void EnterAnswer()
     {
-        //Creates an empty string for the 3 question parts
-        string question1 = "";
-        string question2 = "";
-        string question3 = "";
-
-
         switch (questionPart)
         {
             case 1:
-               
-                    if (uInput.text.Equals(Ans))
-                    {
-                        output.text = "Congrats, you have solved my first question can you solve the second one though let us find out. \n Press enter to continue...";
-                        questionPart++; 
-                        QuestionCounter++;
-                    }
-                    else
-                    {
-                        output.text = "Try again maybe they should have sent someone else to save the king.";
-                    }
+                       
 
-                
-                if(uInput.GetComponent<TMP_InputField>().isFocused == false && QuestionCounter == 1)
+                if (uInput.text.Equals(Ans))
                 {
-                    question1 = "The Kings pulley system is released from rest, given that the king on the right weighs " + b +
-                               "kg, and the king on the left weighs " + a + "kg, Find the final velocity of both kings " + t
-                               + " seconds after releasing the system from rest.";
+                    output.text = "Congrats, you have solved my first question can you solve the second one though let us find out. \n Press enter to continue...";
+                    questionPart++;
+                    QuestionCounter++;
                     
-                        StartCoroutine(TypeQuestion(question1));
-                    
-
+                }
+                else
+                {
+                    uInput.ActivateInputField();
+                    output.text = "Try again maybe they should have sent someone else to save the king.";
                   
-                }  
-              
-               break;
+
+                }
+    
+
+
+
+                break;
             case 2:
                 if (uInput.text.Equals(acceleration.ToString()))
                 {
@@ -145,14 +159,9 @@ public class PulleyQuestionManager : MonoBehaviour
                 {
                     output.text = "Wrong!";
                 }
-                if (uInput.GetComponent<TMP_InputField>().isFocused == false && QuestionCounter == 2)
-                {
-                    question2 = "This is question 2 how cool";
-                    StartCoroutine(TypeQuestion(question2));
+              
 
-                }
-                
-                    break;
+                break;
             case 3:
                 if (uInput.text.Equals(DTA.ToString()))
                 {
@@ -164,17 +173,12 @@ public class PulleyQuestionManager : MonoBehaviour
                 {
                     output.text = "Wrong!";
                 }
-                if (uInput.GetComponent<TMP_InputField>().isFocused == false && QuestionCounter == 3)
-                {
-                    question3 = "This is question 3 how cool";
-                    StartCoroutine(TypeQuestion(question3));
-
-                }
+             
                 break;
 
 
         }
-                
+
     }
     void StopAnimations()
     {
@@ -194,7 +198,7 @@ public class PulleyQuestionManager : MonoBehaviour
     }
     IEnumerator TypeQuestion(string question)
     {
-        
+
         // create the empty text
         output.text = "";
         // for each letter in question
@@ -206,6 +210,6 @@ public class PulleyQuestionManager : MonoBehaviour
             // wait 0.05 seconds between letters added
             yield return new WaitForSeconds(0.05f);
         }
-       
+
     }//end of TypeQuestion
 }
