@@ -68,11 +68,12 @@ public class PulleyQuestionManager : MonoBehaviour
         string question1 = "";
         string question2 = "";
         string question3 = "";
-        BText.text = "Click to see \n question again..";
+        BText.text = "Click to see question again..";
 
         question1 = "The Kings pulley system is released from rest, given that the king on the right weighs " + b +
-                               "kg, and the king on the left weighs " + a + "kg, Find the final velocity of both kings " + t
-                               + " seconds after releasing the system from rest.";
+                    "kg, and the king on the left weighs " + a + "kg, Find the final velocity of both kings " + t
+                  + " seconds after releasing the system from rest.";
+
         question2 = "This is asking for acceleration";
 
         question3 = " This is asking for dta";
@@ -116,8 +117,8 @@ public class PulleyQuestionManager : MonoBehaviour
         string question = "";
        
 
-        question = "The king has been kidnapped and is being held hostage by an evil wizard, to save him.\n "
-            + "you will have to answer 3 questions on double \n pulleys are you up for the task?\n Press the start button to begin. ";
+        question = "The king has been kidnapped and is being held hostage by an evil wizard, to save him. "
+            + "you will have to answer 3 questions on double pulleys are you up for the task?\n Press the start button to begin. ";
 
         StartCoroutine(TypeQuestion(question));
 
