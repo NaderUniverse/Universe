@@ -12,8 +12,9 @@ public class PulleyQuestionManager : MonoBehaviour
     //TmpPro
     public Button StartButton;
     public TMP_Text BText;
-
-
+    public GameObject L1;
+    public GameObject L2;
+    public GameObject L3;
     //Declarations
     //Int
     public int a, b;//A needs to be between 2-4 and B needs to be inbetween 5-7
@@ -74,9 +75,9 @@ public class PulleyQuestionManager : MonoBehaviour
                     "kg, and the king on the left weighs " + a + "kg, Find the final velocity of both kings " + t
                   + " seconds after releasing the system from rest.";
 
-        question2 = "This is asking for acceleration";
+        question2 = "For the next part, Calculate the Acceleration of the king on the right in m/s^3";
 
-        question3 = " This is asking for dta";
+        question3 = "Finally Calculate the distance traveled by the king on the left after " + t +"seconds."  ;
 
 
         if(QuestionCounter == 1)
@@ -135,7 +136,8 @@ public class PulleyQuestionManager : MonoBehaviour
                     output.text = "Congrats, you have solved my first question can you solve the second one though let us find out. \n Press enter to continue...";
                     questionPart++;
                     QuestionCounter++;
-                    
+                    L1.SetActive(true);
+                    BText.text = "Next Part";
                 }
                 else
                 {
@@ -155,6 +157,8 @@ public class PulleyQuestionManager : MonoBehaviour
                     output.text = "Wow, you really know your stuff on to the last and hardest of my questions.";
                     questionPart++;
                     QuestionCounter++;
+                    L2.SetActive(true);
+                    BText.text = "Final Part";
                 }
                 else
                 {
@@ -169,6 +173,7 @@ public class PulleyQuestionManager : MonoBehaviour
                     output.text = "You have defeated me the king is yours; I greatly underestimated your knowledge in double pulleys.";
                     QuestionCounter++;
                     questionPart++;
+                    L3.SetActive(true);
                 }
                 else
                 {

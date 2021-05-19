@@ -141,12 +141,12 @@ GameObject:
   - component: {fileID: 6167604}
   - component: {fileID: 6167603}
   m_Layer: 0
-  m_Name: ChainLink_Curve_1
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &6167596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,7 +1206,7 @@ Transform:
   m_LocalScale: {x: 3.6185362, y: 3.667983, z: 1}
   m_Children: []
   m_Father: {fileID: 1789281192}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &158013498
 GameObject:
@@ -1308,12 +1308,12 @@ GameObject:
   - component: {fileID: 249336452}
   - component: {fileID: 249336450}
   m_Layer: 0
-  m_Name: ChainLink6
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &249336445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1528,12 +1528,12 @@ GameObject:
   - component: {fileID: 320472082}
   - component: {fileID: 320472083}
   m_Layer: 0
-  m_Name: ChainLink7
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &320472077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1728,12 +1728,12 @@ GameObject:
   - component: {fileID: 350402352}
   - component: {fileID: 350402351}
   m_Layer: 0
-  m_Name: ChainLink3
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &350402347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1899,12 +1899,12 @@ GameObject:
   - component: {fileID: 389976103}
   - component: {fileID: 389976104}
   m_Layer: 0
-  m_Name: Pivot
+  m_Name: old Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &389976101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1965,11 +1965,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389976100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7719998, y: 5.3658414, z: 6.2849593}
+  m_LocalPosition: {x: 15.87, y: 7.23, z: 6.2849593}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1789281192}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &389976103
 Rigidbody2D:
@@ -2027,7 +2027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &433507921
 Transform:
   m_ObjectHideFlags: 0
@@ -2615,12 +2615,12 @@ GameObject:
   m_Component:
   - component: {fileID: 641027602}
   m_Layer: 0
-  m_Name: Chainholder
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &641027602
 Transform:
   m_ObjectHideFlags: 0
@@ -2629,7 +2629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641027601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.99149, y: 1.1369531, z: -2.6347208}
+  m_LocalPosition: {x: 9.78, y: 7.04, z: -2.6347208}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6167598}
@@ -2676,6 +2676,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartButton: {fileID: 584895465}
   BText: {fileID: 582036030}
+  L1: {fileID: 2049393777}
+  L2: {fileID: 433507920}
+  L3: {fileID: 1766718822}
   a: 0
   b: 0
   Score: 0
@@ -2954,12 +2957,12 @@ GameObject:
   - component: {fileID: 909985373}
   - component: {fileID: 909985377}
   m_Layer: 0
-  m_Name: KingCage
+  m_Name: Old Kings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!232 &909985373
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -2977,7 +2980,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.7181933
+  m_Distance: 0.7181932
   m_MaxDistanceOnly: 0
 --- !u!50 &909985374
 Rigidbody2D:
@@ -3060,12 +3063,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909985372}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0499997, y: 1.5288413, z: 6.2849593}
-  m_LocalScale: {x: 1.3935001, y: 1.1847, z: 1}
+  m_LocalPosition: {x: -1.0398287, y: -0.95058554, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1588015627}
-  m_Father: {fileID: 1789281192}
-  m_RootOrder: 3
+  m_Father: {fileID: 1958699598}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &909985377
 CapsuleCollider2D:
@@ -3098,12 +3101,12 @@ GameObject:
   - component: {fileID: 949522834}
   - component: {fileID: 949522833}
   m_Layer: 0
-  m_Name: ChainLink1
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &949522829
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3439,12 +3442,12 @@ GameObject:
   - component: {fileID: 1001923860}
   - component: {fileID: 1001923861}
   m_Layer: 0
-  m_Name: ChainLink5
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1001923854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3835,12 +3838,12 @@ GameObject:
   - component: {fileID: 1111360181}
   - component: {fileID: 1111360182}
   m_Layer: 0
-  m_Name: SkullPulleyRight
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1111360177
 Transform:
   m_ObjectHideFlags: 0
@@ -4009,12 +4012,12 @@ GameObject:
   - component: {fileID: 1124505264}
   - component: {fileID: 1124505261}
   m_Layer: 0
-  m_Name: ChainLink2
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1124505259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4182,12 +4185,12 @@ GameObject:
   - component: {fileID: 1151353757}
   - component: {fileID: 1151353758}
   m_Layer: 0
-  m_Name: SkullPulleyLeft
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1151353753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4419,7 +4422,7 @@ Transform:
   m_LocalScale: {x: 0.917, y: 0.5653, z: 1}
   m_Children: []
   m_Father: {fileID: 1789281192}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1174328524
 GameObject:
@@ -4637,7 +4640,7 @@ Transform:
   m_LocalScale: {x: 1.6175, y: 1.5859, z: 1}
   m_Children: []
   m_Father: {fileID: 1789281192}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1302548947
 GameObject:
@@ -8106,7 +8109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1766718823
 Transform:
   m_ObjectHideFlags: 0
@@ -8190,9 +8193,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 147448757}
-  - {fileID: 1896465932}
   - {fileID: 1958699598}
-  - {fileID: 909985376}
   - {fileID: 389976102}
   - {fileID: 1163506973}
   - {fileID: 1263177484}
@@ -8333,12 +8334,12 @@ GameObject:
   - component: {fileID: 1851594376}
   - component: {fileID: 1851594377}
   m_Layer: 0
-  m_Name: ChainLink_Curve
+  m_Name: Old chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1851594370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8761,12 +8762,12 @@ GameObject:
   - component: {fileID: 1896465934}
   - component: {fileID: 1896465933}
   m_Layer: 0
-  m_Name: King
+  m_Name: Old Kings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1896465932
 Transform:
   m_ObjectHideFlags: 0
@@ -8775,10 +8776,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896465931}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.547624, y: 1.9971166, z: 6.2849593}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: -0.0440449, y: -1.3581853, z: 0}
+  m_LocalScale: {x: 2.8704698, y: 3.376382, z: 1}
   m_Children: []
-  m_Father: {fileID: 1789281192}
+  m_Father: {fileID: 1958699598}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1896465933
@@ -8962,12 +8963,12 @@ GameObject:
   - component: {fileID: 1958699600}
   - component: {fileID: 1958699604}
   m_Layer: 0
-  m_Name: GargoyleCage
+  m_Name: Old Kings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1958699598
 Transform:
   m_ObjectHideFlags: 0
@@ -8976,11 +8977,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958699597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.499, y: 2.655, z: 6.2849593}
+  m_LocalPosition: {x: 19.179, y: 3.6061587, z: 6.2849593}
   m_LocalScale: {x: 1.3935001, y: 1.1847, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 909985376}
+  - {fileID: 1896465932}
   m_Father: {fileID: 1789281192}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1958699599
 Rigidbody2D:
@@ -9094,7 +9097,7 @@ DistanceJoint2D:
   m_Anchor: {x: -0.017654326, y: 1.0750877}
   m_ConnectedAnchor: {x: -0.015274763, y: 0.5119741}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.116986796
+  m_Distance: 0.84052
   m_MaxDistanceOnly: 0
 --- !u!70 &1958699603
 CapsuleCollider2D:
@@ -9127,7 +9130,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: -0.01883829, y: 1.0738769}
-  m_ConnectedAnchor: {x: 5.0716443, y: 3.131826}
+  m_ConnectedAnchor: {x: 20.755304, y: 4.3595395}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -9214,7 +9217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2049393778
 Transform:
   m_ObjectHideFlags: 0
