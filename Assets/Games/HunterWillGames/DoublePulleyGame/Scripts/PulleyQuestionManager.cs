@@ -79,7 +79,7 @@ public class PulleyQuestionManager : MonoBehaviour
 
         question1 = "The Kings pulley system is released from rest, given that the king on the right weighs " + b +
                     "kg, and the king on the left weighs " + a + "kg, Find the final velocity of both kings " + t
-                  + " seconds after releasing the system from rest. ";
+                  + " seconds after releasing the system from rest. (Separate your answer with a comma and round to 3 decimal places...)";
 
         question2 = "For the next part, Calculate the Acceleration of the king on the right in m/s^3";
 
@@ -108,7 +108,9 @@ public class PulleyQuestionManager : MonoBehaviour
         //first question
         tmp = (2 * xB) / t;
         VB = tmp;
+        VB = (float)Math.Round(VB,3);
         VA = -VB / 2;
+        VA = (float)Math.Round(VA,3);
 
         Ans = VB + "," + VA;
 
