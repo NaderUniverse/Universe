@@ -15,6 +15,10 @@ public class PulleyQuestionManager : MonoBehaviour
     public GameObject L1;
     public GameObject L2;
     public GameObject L3;
+    //Animation Clips
+    public Animator CageMoveLeft;
+    public Animator CageMoveRight;
+    //
     //Declarations
     //Int
     public int a, b;//A needs to be between 2-4 and B needs to be inbetween 5-7
@@ -43,6 +47,8 @@ public class PulleyQuestionManager : MonoBehaviour
         a = Random.Range(2, 4);
         b = Random.Range(5, 7);
         xB = Random.Range((float)0.25, 2);
+        CageMoveRight.enabled = false;
+        CageMoveLeft.enabled = false;
     }
 
     // Update is called once per frame
@@ -73,7 +79,7 @@ public class PulleyQuestionManager : MonoBehaviour
 
         question1 = "The Kings pulley system is released from rest, given that the king on the right weighs " + b +
                     "kg, and the king on the left weighs " + a + "kg, Find the final velocity of both kings " + t
-                  + " seconds after releasing the system from rest.";
+                  + " seconds after releasing the system from rest. ";
 
         question2 = "For the next part, Calculate the Acceleration of the king on the right in m/s^3";
 
@@ -83,6 +89,7 @@ public class PulleyQuestionManager : MonoBehaviour
         if(QuestionCounter == 1)
         {
               StartCoroutine(TypeQuestion(question1));
+              StartCageAnimations();
         }
         if (QuestionCounter == 2)
         {
@@ -119,7 +126,8 @@ public class PulleyQuestionManager : MonoBehaviour
        
 
         question = "The king has been kidnapped and is being held hostage by an evil wizard, to save him. "
-            + "you will have to answer 3 questions on double pulleys are you up for the task?\n Press the start button to begin. ";
+            + "you will have to answer 3 questions on double pulleys are you up for the task? Remember the wise man is here to help you." + 
+            " Press the start button to begin. ";
 
         StartCoroutine(TypeQuestion(question));
 
@@ -133,7 +141,7 @@ public class PulleyQuestionManager : MonoBehaviour
 
                 if (uInput.text.Equals(Ans))
                 {
-                    output.text = "Congrats, you have solved my first question can you solve the second one though let us find out. \n Press enter to continue...";
+                    output.text = "Congrats, you have solved my first question can you solve the second one though let us find out. \n Press the button to continue...";
                     questionPart++;
                     QuestionCounter++;
                     L1.SetActive(true);
@@ -162,7 +170,7 @@ public class PulleyQuestionManager : MonoBehaviour
                 }
                 else
                 {
-                    output.text = "Wrong!";
+                    output.text = "You will never beat me";
                 }
               
 
@@ -177,13 +185,26 @@ public class PulleyQuestionManager : MonoBehaviour
                 }
                 else
                 {
-                    output.text = "Wrong!";
+                    output.text = "Wow you were so close but still wrong try again";
                 }
              
                 break;
 
 
         }
+
+    }
+
+    //Starts the cage animations
+    void StartCageAnimations()
+    {
+        //Right cage animator
+        CageMoveRight.enabled = true;
+        CageMoveRight.Play("King Animation");
+        //Left Cage animator for the first part of the question
+        CageMoveLeft.enabled = true;
+        CageMoveLeft.Play("Left King Movement");
+
 
     }
     void StopAnimations()

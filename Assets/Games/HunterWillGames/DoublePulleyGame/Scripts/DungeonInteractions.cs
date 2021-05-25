@@ -23,6 +23,6 @@ public class DungeonInteractions : MonoBehaviour
     void OnTriggerExit2D(Collider2D info)
     {
         userInteractText.SetActive(false);
-        //hintText.SetActive(false);
+        hintText.SetActive(false);
     }
 }
