@@ -15,11 +15,21 @@ public class PulleyQuestionManager : MonoBehaviour
     public GameObject L1;
     public GameObject L2;
     public GameObject L3;
+    public GameObject Global;
+    public GameObject Evil;
+    public GameObject King;
+    public GameObject KingSpawn;
+    public GameObject Fake;
+    public GameObject FKing;
     //Animation Clips
     public Animator CageMoveLeft;
     public Animator CageMoveRight;
     //
     //Declarations
+    //Camera
+    public float CamShakeAmt = 0.1f;
+    CameraShake camShake;
+    public float camShakelength = 0.1f;
     //Int
     public int a, b;//A needs to be between 2-4 and B needs to be inbetween 5-7
     public int Score = 0;
@@ -27,6 +37,8 @@ public class PulleyQuestionManager : MonoBehaviour
     public int QuestionCounter = 1;
     public int tChange = 0;
     public int wrong = 0;
+    public int cShake = 0;
+    public float BlackOut;
     //float
     //distance is between 0.25m - 2.0m for part 2)xA,xB is distance traveled 
     public float t, distance, acceleration, xB, xA;//t is inbetween 1.0 - 3.0, for part 3) needs to be inbetween 2.0 - 3.0 could use two variables for this
@@ -49,6 +61,8 @@ public class PulleyQuestionManager : MonoBehaviour
         xB = Random.Range((float)0.25, 2);
         CageMoveRight.enabled = false;
         CageMoveLeft.enabled = false;
+
+        camShake = GetComponent<CameraShake>();
     }
 
     // Update is called once per frame
@@ -84,13 +98,20 @@ public class PulleyQuestionManager : MonoBehaviour
         question2 = "For the next part, Calculate the Acceleration of the king on the right in m/s^3";
 
         question3 = "Finally Calculate the distance traveled by the king on the left after " + t +"seconds."  ;
-
-
+       
         if(QuestionCounter == 1)
         {
               StartCoroutine(TypeQuestion(question1));
-              StartCageAnimations();
+              
+         if(QuestionCounter == 1 && cShake == 0)
+          {
+
+                 camShake.Shake(CamShakeAmt, camShakelength);
+                cShake++;
+                StartCageAnimations();
+            }
         }
+
         if (QuestionCounter == 2)
         {
             StartCoroutine(TypeQuestion(question2));
@@ -186,6 +207,7 @@ public class PulleyQuestionManager : MonoBehaviour
                     QuestionCounter++;
                     questionPart++;
                     L3.SetActive(true);
+                    Winning();
                 }
                 else
                 {
@@ -198,7 +220,33 @@ public class PulleyQuestionManager : MonoBehaviour
         }
 
     }
+    IEnumerator ExampleCoroutine()
+    {
 
+
+        Global.SetActive(false);     
+        Evil.SetActive(false);
+        King.transform.position = KingSpawn.transform.position;
+        Fake.SetActive(true);
+        FKing.SetActive(false);
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(BlackOut);
+        Global.SetActive(true);
+         output.text = "You have saved me, Thank you my knight";
+    }
+    void Winning()
+    {
+        
+       
+
+       
+        
+       
+        StartCoroutine(ExampleCoroutine());
+        
+      
+
+    }
     //Starts the cage animations
     void StartCageAnimations()
     {
